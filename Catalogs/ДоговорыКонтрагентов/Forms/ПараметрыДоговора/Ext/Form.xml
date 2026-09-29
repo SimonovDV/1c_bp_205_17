@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаКомандаСохранитьИЗакрыть" id="15">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.КомандаСохранитьИЗакрыть</CommandName>
+				<BackColor>style:ImportantColor</BackColor>
+				<BorderColor>style:TableHeaderTextColor</BorderColor>
+				<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+				<ExtendedTooltip name="ФормаКомандаСохранитьИЗакрытьРасширеннаяПодсказка" id="16"/>
+			</Button>
+			<Button name="ФормаКомандаСохранения" id="13">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.КомандаСохранения</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Сохранить</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаКомандаСохраненияРасширеннаяПодсказка" id="14"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="ЭлементТекущий" id="10">
+			<DataPath>ЭлементТекущий</DataPath>
+			<Visible>false</Visible>
+			<ContextMenu name="ЭлементТекущийКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ЭлементТекущийРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="ДатаНачала" id="1">
+			<DataPath>ДатаНачала</DataPath>
+			<ContextMenu name="ДатаНачалаКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ДатаНачалаРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="КомиссияТО" id="4">
+			<DataPath>КомиссияТО</DataPath>
+			<ContextMenu name="КомиссияТОКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="КомиссияТОРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="ЭТ_ПризнакАгента" id="7">
+			<DataPath>ЭТ_ПризнакАгента</DataPath>
+			<ContextMenu name="ЭТ_ПризнакАгентаКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ЭТ_ПризнакАгентаРасширеннаяПодсказка" id="9"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ДатаНачала" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата начала</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КомиссияТО" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комиссия ТО</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЭТ_ПризнакАгента" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Признак агента</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ПризнакиАгента</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЭлементТекущий" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Элемент текущий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ДоговорыКонтрагентов</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаСохранения" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда сохранения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить и не закрывать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбработкаСохранения</Action>
+		</Command>
+		<Command name="КомандаСохранитьИЗакрыть" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать и закрыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда сохранить и закрыть</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбработкаСохраненияИЗакрытия</Action>
+		</Command>
+	</Commands>
+</Form>

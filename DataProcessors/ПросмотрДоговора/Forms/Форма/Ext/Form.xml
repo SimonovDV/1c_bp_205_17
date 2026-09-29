@@ -1,0 +1,506 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Подвал" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подвал</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подвал</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ПодвалРасширеннаяПодсказка" id="21"/>
+		</UsualGroup>
+		<Pages name="Страницы" id="39">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="40"/>
+			<ChildItems>
+				<Page name="Персональная" id="43">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Персональная</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Персональная</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ПерсональнаяРасширеннаяПодсказка" id="44"/>
+					<ChildItems>
+						<UsualGroup name="ПанельПоиска" id="16">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Панель поиска</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Панель поиска</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Usual</Behavior>
+							<ShowTitle>false</ShowTitle>
+							<BackColor>#FFFF99</BackColor>
+							<ExtendedTooltip name="ПанельПоискаРасширеннаяПодсказка" id="17"/>
+							<ChildItems>
+								<InputField name="Договор" id="1">
+									<DataPath>Объект.Договор</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ДоговорКонтекстноеМеню" id="2"/>
+									<ExtendedTooltip name="ДоговорРасширеннаяПодсказка" id="3"/>
+									<Events>
+										<Event name="OnChange">ДоговорПриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="ВладелецЭлемента" id="28">
+							<DataPath>Объект.ВладелецЭлемента</DataPath>
+							<Enabled>false</Enabled>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Владелец</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="ВладелецЭлементаКонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="ВладелецЭлементаРасширеннаяПодсказка" id="30"/>
+						</InputField>
+						<InputField name="Организация" id="25">
+							<DataPath>Объект.Организация</DataPath>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="ОрганизацияКонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="27"/>
+						</InputField>
+						<InputField name="ВалютаВзаиморасчетов" id="34">
+							<DataPath>Объект.ВалютаВзаиморасчетов</DataPath>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="ВалютаВзаиморасчетовКонтекстноеМеню" id="35"/>
+							<ExtendedTooltip name="ВалютаВзаиморасчетовРасширеннаяПодсказка" id="36"/>
+						</InputField>
+						<InputField name="КомиссияТО" id="66">
+							<DataPath>Объект.КомиссияТО</DataPath>
+							<ClearButton>true</ClearButton>
+							<ContextMenu name="КомиссияТОКонтекстноеМеню" id="67"/>
+							<ExtendedTooltip name="КомиссияТОРасширеннаяПодсказка" id="68"/>
+						</InputField>
+						<Button name="Поменять" id="18">
+							<Type>UsualButton</Type>
+							<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+							<CommandName>Form.Command.Поменять</CommandName>
+							<ExtendedTooltip name="ПоменятьРасширеннаяПодсказка" id="19"/>
+						</Button>
+					</ChildItems>
+				</Page>
+				<Page name="Групповая" id="45">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Групповая</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Групповая</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГрупповаяРасширеннаяПодсказка" id="46"/>
+					<ChildItems>
+						<InputField name="ОрганизацияГрупповая" id="47">
+							<DataPath>ОрганизацияГрупповая</DataPath>
+							<ContextMenu name="ОрганизацияГрупповаяКонтекстноеМеню" id="48"/>
+							<ExtendedTooltip name="ОрганизацияГрупповаяРасширеннаяПодсказка" id="49"/>
+						</InputField>
+						<InputField name="ВалютаГрупповая" id="50">
+							<DataPath>ВалютаГрупповая</DataPath>
+							<ContextMenu name="ВалютаГрупповаяКонтекстноеМеню" id="51"/>
+							<ExtendedTooltip name="ВалютаГрупповаяРасширеннаяПодсказка" id="52"/>
+						</InputField>
+						<LabelDecoration name="Декорация1" id="63">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Будут затронуты только те элементы, в которых не указаны выбранные поля.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Декорация1КонтекстноеМеню" id="64"/>
+							<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="65"/>
+						</LabelDecoration>
+						<Button name="ПоменятьГрупповую" id="61">
+							<Type>UsualButton</Type>
+							<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+							<CommandName>Form.Command.ПоменятьГрупповую</CommandName>
+							<ExtendedTooltip name="ПоменятьГрупповуюРасширеннаяПодсказка" id="62"/>
+						</Button>
+					</ChildItems>
+				</Page>
+				<Page name="ПоискДоговора" id="69">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поиск договора</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поиск договора</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ПоискДоговораРасширеннаяПодсказка" id="70"/>
+					<ChildItems>
+						<InputField name="ВидДоговора" id="71">
+							<DataPath>ВидДоговора</DataPath>
+							<ContextMenu name="ВидДоговораКонтекстноеМеню" id="72"/>
+							<ExtendedTooltip name="ВидДоговораРасширеннаяПодсказка" id="73"/>
+						</InputField>
+						<InputField name="ДатаДоговораНач" id="77">
+							<DataPath>ДатаДоговораНач</DataPath>
+							<ContextMenu name="ДатаДоговораНачКонтекстноеМеню" id="78"/>
+							<ExtendedTooltip name="ДатаДоговораНачРасширеннаяПодсказка" id="79"/>
+						</InputField>
+						<InputField name="ДатаДоговораКон" id="74">
+							<DataPath>ДатаДоговораКон</DataPath>
+							<ContextMenu name="ДатаДоговораКонКонтекстноеМеню" id="75"/>
+							<ExtendedTooltip name="ДатаДоговораКонРасширеннаяПодсказка" id="76"/>
+						</InputField>
+						<Table name="СпДоговор" id="80">
+							<Representation>List</Representation>
+							<Header>false</Header>
+							<HorizontalLines>false</HorizontalLines>
+							<VerticalLines>false</VerticalLines>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<DataPath>СпДоговор</DataPath>
+							<RowPictureDataPath>СпДоговор.Picture</RowPictureDataPath>
+							<ContextMenu name="СпДоговорКонтекстноеМеню" id="81"/>
+							<AutoCommandBar name="СпДоговорКоманднаяПанель" id="82">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="СпДоговорРасширеннаяПодсказка" id="83"/>
+							<SearchStringAddition name="СпДоговорСтрокаПоиска" id="84">
+								<AdditionSource>
+									<Item>СпДоговор</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СпДоговорСтрокаПоискаКонтекстноеМеню" id="85"/>
+								<ExtendedTooltip name="СпДоговорСтрокаПоискаРасширеннаяПодсказка" id="86"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СпДоговорСостояниеПросмотра" id="87">
+								<AdditionSource>
+									<Item>СпДоговор</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СпДоговорСостояниеПросмотраКонтекстноеМеню" id="88"/>
+								<ExtendedTooltip name="СпДоговорСостояниеПросмотраРасширеннаяПодсказка" id="89"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СпДоговорУправлениеПоиском" id="90">
+								<AdditionSource>
+									<Item>СпДоговор</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СпДоговорУправлениеПоискомКонтекстноеМеню" id="91"/>
+								<ExtendedTooltip name="СпДоговорУправлениеПоискомРасширеннаяПодсказка" id="92"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="СпДоговорЗначение" id="93">
+									<DataPath>СпДоговор.Value</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<DropListButton>false</DropListButton>
+									<ChoiceButton>false</ChoiceButton>
+									<ClearButton>false</ClearButton>
+									<SpinButton>false</SpinButton>
+									<OpenButton>true</OpenButton>
+									<CreateButton>false</CreateButton>
+									<ChooseType>false</ChooseType>
+									<TextEdit>false</TextEdit>
+									<ContextMenu name="СпДоговорЗначениеКонтекстноеМеню" id="94"/>
+									<ExtendedTooltip name="СпДоговорЗначениеРасширеннаяПодсказка" id="95"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+						<UsualGroup name="Группа1" id="100">
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="101"/>
+							<ChildItems>
+								<Button name="НайтиДоговоры" id="96">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.НайтиДоговоры</CommandName>
+									<ExtendedTooltip name="НайтиДоговорыРасширеннаяПодсказка" id="97"/>
+								</Button>
+								<Button name="ПоменятьПоСписку" id="98">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ПоменятьПоСписку</CommandName>
+									<ExtendedTooltip name="ПоменятьПоСпискуРасширеннаяПодсказка" id="99"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ОператорПоЗаявке" id="102">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Оператор по заявке</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Оператор по заявке</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ОператорПоЗаявкеРасширеннаяПодсказка" id="103"/>
+					<ChildItems>
+						<InputField name="ПоискНомерЗаявки" id="104">
+							<DataPath>ПоискНомерЗаявки</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Номер заявки</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ПоискНомерЗаявкиКонтекстноеМеню" id="105"/>
+							<ExtendedTooltip name="ПоискНомерЗаявкиРасширеннаяПодсказка" id="106"/>
+						</InputField>
+						<Button name="НайтиОператора" id="113">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.НайтиОператора</CommandName>
+							<ExtendedTooltip name="НайтиОператораРасширеннаяПодсказка" id="114"/>
+						</Button>
+						<InputField name="ИННОператора" id="110">
+							<DataPath>ИННОператора</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ИННОператораКонтекстноеМеню" id="111"/>
+							<ExtendedTooltip name="ИННОператораРасширеннаяПодсказка" id="112"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ПросмотрДоговора</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ОрганизацияГрупповая" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВалютаГрупповая" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Валюта групповая</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Валюты</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВидДоговора" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид договора</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeId>64a256d9-e077-48f6-82c7-70ab796d2113</v8:TypeId>
+			</Type>
+		</Attribute>
+		<Attribute name="ДатаДоговораКон" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Конец периода</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДатаДоговораНач" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начало периода</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СпДоговор" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Договоры</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПоискНомерЗаявки" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поиск номер заявки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИННОператора" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ИНН Оператора</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Поменять" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поменять</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поменять</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Поменять</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПоменятьГрупповую" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исправить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поменять групповую</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоменятьГрупповую</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="НайтиДоговоры" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти договоры</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти договоры</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НайтиДоговоры</Action>
+		</Command>
+		<Command name="ПоменятьПоСписку" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поменять по списку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поменять по списку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоменятьПоСписку</Action>
+		</Command>
+		<Command name="НайтиОператора" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти оператора</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти оператора</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НайтиОператора</Action>
+		</Command>
+	</Commands>
+</Form>

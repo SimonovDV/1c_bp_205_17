@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Enum uuid="d456cec7-a623-452b-8b06-8d1e7322a177">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ПризнакиСпособаРасчета" category="Ref">
+				<xr:TypeId>4197ba0b-0419-4bb3-8d57-28ada305ef0e</xr:TypeId>
+				<xr:ValueId>a68d4ddc-72ae-4bf3-8294-539acc81d8a7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ПризнакиСпособаРасчета" category="Manager">
+				<xr:TypeId>9298ce6c-e6a3-47ec-8ed2-be0b704ecb9f</xr:TypeId>
+				<xr:ValueId>976169f1-9f68-4d07-9c43-a041c3c48354</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ПризнакиСпособаРасчета" category="List">
+				<xr:TypeId>d4df8dc2-2234-4560-b644-1de7bdde4282</xr:TypeId>
+				<xr:ValueId>88d04d70-e5f8-4e79-b6e0-4c930c352232</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ПризнакиСпособаРасчета</Name>
+			<Comment/>
+		</Properties>
+		<ChildObjects/>
+	</Enum>
+</MetaDataObject>

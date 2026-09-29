@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Document uuid="d19900fa-2169-4f02-b080-7d6512e99ebc">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.ОплатаПлатежнойКартой" category="Object">
+				<xr:TypeId>00ea1675-e23e-47a5-9889-64557a789f72</xr:TypeId>
+				<xr:ValueId>c3c0b3af-7706-4021-bfd4-f615b86b3173</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.ОплатаПлатежнойКартой" category="Ref">
+				<xr:TypeId>a09ffef2-4e89-4886-b5d3-38519048ec42</xr:TypeId>
+				<xr:ValueId>e89813ad-c3a8-44d9-95c6-a53fec88bce9</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.ОплатаПлатежнойКартой" category="Selection">
+				<xr:TypeId>f076a21b-2e3c-4987-bb47-a9f7cbc2a152</xr:TypeId>
+				<xr:ValueId>6331c1f3-ac5b-4947-b42d-2500572ee805</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.ОплатаПлатежнойКартой" category="List">
+				<xr:TypeId>056f0e67-20b4-45ac-a949-5bf464095550</xr:TypeId>
+				<xr:ValueId>5fee1b4a-0297-4a8a-bbfb-b85cd750421a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.ОплатаПлатежнойКартой" category="Manager">
+				<xr:TypeId>39d0d609-506b-4dfa-bf6e-aef79743bc5d</xr:TypeId>
+				<xr:ValueId>5a66e5e3-7aed-4b61-bbde-6c66394ab3b0</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:PropertyState>
+				<xr:Property>ObjectModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+			<xr:PropertyState>
+				<xr:Property>ManagerModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ОплатаПлатежнойКартой</Name>
+			<Comment/>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<Form>ФормаДокументаОднострочная</Form>
+			<Form>ФормаСписка</Form>
+			<TabularSection uuid="7da911f1-465c-47df-8719-b6588a1a40d2">
+				<InternalInfo>
+					<xr:GeneratedType name="DocumentTabularSection.ОплатаПлатежнойКартой.РасшифровкаПлатежа" category="TabularSection">
+						<xr:TypeId>5256579a-8527-49bf-8790-030a759c1d5d</xr:TypeId>
+						<xr:ValueId>e37f22fb-979d-42c8-98cd-25dfd9bcb1fb</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DocumentTabularSectionRow.ОплатаПлатежнойКартой.РасшифровкаПлатежа" category="TabularSectionRow">
+						<xr:TypeId>b9ff4043-4da2-4a00-abfa-1510f6c93351</xr:TypeId>
+						<xr:ValueId>cb42588c-627a-4e00-a17c-51dcb1d10177</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>РасшифровкаПлатежа</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>7ee7c823-fd15-4add-832f-743f076fdbe0</ExtendedConfigurationObject>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="13b9c400-7cfd-42ee-8699-40dab6201859">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>ДоговорКонтрагента</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>da242d51-6417-447c-9693-2a4d5370561c</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>cfg:CatalogRef.ДоговорыКонтрагентов</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

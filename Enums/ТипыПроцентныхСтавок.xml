@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Enum uuid="3d30f272-ebfa-4c8f-98cd-e99ea32b5b8f">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ТипыПроцентныхСтавок" category="Ref">
+				<xr:TypeId>da8a63ad-99d2-4144-b6e7-0d4268aa22d7</xr:TypeId>
+				<xr:ValueId>32a6cec5-b5a8-4afc-a141-a0d642255d53</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ТипыПроцентныхСтавок" category="Manager">
+				<xr:TypeId>3ef12ce5-c6bb-4f9a-8284-ebf99a150e74</xr:TypeId>
+				<xr:ValueId>fb57fdd3-9d9c-440c-80d7-ea570b8d28bf</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ТипыПроцентныхСтавок" category="List">
+				<xr:TypeId>6eded6bf-2d5a-4089-90b5-fceee0c2093a</xr:TypeId>
+				<xr:ValueId>df6ba410-edf4-49ee-b36a-fad8dbad5eb6</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ТипыПроцентныхСтавок</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>e569c2ac-20f6-4ead-9e3c-806630130730</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="b8ef5d0e-c9fa-4541-8ba0-688123f6cb39">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ФиксированнаяСтавка</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>2be3a47c-bccf-48ec-95e6-7e3fcb605628</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="28619f89-6a0f-4a02-92d3-d58c735c9bce">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>БезНачисленияПроцентов</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>3d4c80a8-1af2-4a66-a67a-039878f581cf</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="31ae9a6e-486a-4b1e-b75e-5a95e5f8d064">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>СтавкаЦБ</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>874d8673-dd1d-407b-93c8-f3e3442d6cd5</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

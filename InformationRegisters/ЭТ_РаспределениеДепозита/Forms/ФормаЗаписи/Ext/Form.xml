@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="" id="-1"/>
+	<ChildItems>
+		<InputField name="Идентификатор" id="1">
+			<DataPath>Запись.Идентификатор</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ИдентификаторКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ИдентификаторРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Организация" id="4">
+			<DataPath>Запись.Организация</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ОрганизацияКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Поставщик" id="7">
+			<DataPath>Запись.Поставщик</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ПоставщикКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ПоставщикРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="ДоговорПоставщика" id="10">
+			<DataPath>Запись.ДоговорПоставщика</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ДоговорПоставщикаКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ДоговорПоставщикаРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="Клиент" id="13">
+			<DataPath>Запись.Клиент</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="КлиентКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="КлиентРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="ДоговорКлиента" id="16">
+			<DataPath>Запись.ДоговорКлиента</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ДоговорКлиентаКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ДоговорКлиентаРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="СуммаРаспределения" id="19">
+			<DataPath>Запись.СуммаРаспределения</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="СуммаРаспределенияКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="СуммаРаспределенияРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<InputField name="НДС" id="22">
+			<DataPath>Запись.НДС</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НДСКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="НДСРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<InputField name="Вознаграждение" id="25">
+			<DataPath>Запись.Вознаграждение</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ВознаграждениеКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="ВознаграждениеРасширеннаяПодсказка" id="27"/>
+		</InputField>
+		<InputField name="СборСистемы" id="28">
+			<DataPath>Запись.СборСистемы</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="СборСистемыКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="СборСистемыРасширеннаяПодсказка" id="30"/>
+		</InputField>
+		<InputField name="Содержание" id="31">
+			<DataPath>Запись.Содержание</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="СодержаниеКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="СодержаниеРасширеннаяПодсказка" id="33"/>
+		</InputField>
+		<InputField name="ДатаЗагрузки" id="34">
+			<DataPath>Запись.ДатаЗагрузки</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ДатаЗагрузкиКонтекстноеМеню" id="35"/>
+			<ExtendedTooltip name="ДатаЗагрузкиРасширеннаяПодсказка" id="36"/>
+		</InputField>
+		<InputField name="ДатаВыписки" id="37">
+			<DataPath>Запись.ДатаВыписки</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ДатаВыпискиКонтекстноеМеню" id="38"/>
+			<ExtendedTooltip name="ДатаВыпискиРасширеннаяПодсказка" id="39"/>
+		</InputField>
+		<InputField name="ДатаНачалаДейчтвия" id="40">
+			<DataPath>Запись.ДатаНачалаДейчтвия</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ДатаНачалаДейчтвияКонтекстноеМеню" id="41"/>
+			<ExtendedTooltip name="ДатаНачалаДейчтвияРасширеннаяПодсказка" id="42"/>
+		</InputField>
+		<InputField name="ДатаОкончанияДействия" id="43">
+			<DataPath>Запись.ДатаОкончанияДействия</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ДатаОкончанияДействияКонтекстноеМеню" id="44"/>
+			<ExtendedTooltip name="ДатаОкончанияДействияРасширеннаяПодсказка" id="45"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.ЭТ_РаспределениеДепозита</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

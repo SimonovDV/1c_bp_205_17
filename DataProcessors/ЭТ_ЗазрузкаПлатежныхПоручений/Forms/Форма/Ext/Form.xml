@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ПанельПоиска" id="68">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поиск заявок</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Панель поиска</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Behavior>Usual</Behavior>
+			<ExtendedTooltip name="ПанельПоискаРасширеннаяПодсказка" id="69"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаСтрокиПоиска" id="70">
+					<EnableContentChange>true</EnableContentChange>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа строки поиска</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа строки поиска</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Behavior>Usual</Behavior>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаСтрокиПоискаРасширеннаяПодсказка" id="71"/>
+					<ChildItems>
+						<InputField name="СтрокаПоиска" id="1">
+							<DataPath>Объект.СтрокаПоиска</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="СтрокаПоискаКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="СтрокаПоискаРасширеннаяПодсказка" id="3"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаПолейПоиска" id="72">
+					<EnableContentChange>true</EnableContentChange>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа полей поиска</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа полей поиска</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Behavior>Usual</Behavior>
+					<United>false</United>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПолейПоискаРасширеннаяПодсказка" id="73"/>
+					<ChildItems>
+						<CheckBoxField name="ПоискНомер" id="7">
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ПоискНомерКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="ПоискНомерРасширеннаяПодсказка" id="9"/>
+						</CheckBoxField>
+						<CheckBoxField name="ПоискКод" id="4">
+							<DataPath>Объект.ПоискКод</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ПоискКодКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="ПоискКодРасширеннаяПодсказка" id="6"/>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаКнопки" id="74">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа кнопки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа кнопки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Behavior>Usual</Behavior>
+					<United>false</United>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаКнопкиРасширеннаяПодсказка" id="75"/>
+					<ChildItems>
+						<Button name="ПолучитьПлатежныеПоручения" id="76">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ПолучитьПлатежныеПоручения</CommandName>
+							<ExtendedTooltip name="ПолучитьПлатежныеПорученияРасширеннаяПодсказка" id="77"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ПлатежныеДокументы" id="10">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Объект.ПлатежныеДокументы</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ПлатежныеДокументыКонтекстноеМеню" id="11"/>
+			<AutoCommandBar name="ПлатежныеДокументыКоманднаяПанель" id="12">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ПлатежныеДокументыРасширеннаяПодсказка" id="13"/>
+			<SearchStringAddition name="ПлатежныеДокументыСтрокаПоиска" id="14">
+				<AdditionSource>
+					<Item>ПлатежныеДокументы</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПлатежныеДокументыСтрокаПоискаКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="ПлатежныеДокументыСтрокаПоискаРасширеннаяПодсказка" id="16"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ПлатежныеДокументыСостояниеПросмотра" id="17">
+				<AdditionSource>
+					<Item>ПлатежныеДокументы</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПлатежныеДокументыСостояниеПросмотраКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="ПлатежныеДокументыСостояниеПросмотраРасширеннаяПодсказка" id="19"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ПлатежныеДокументыУправлениеПоиском" id="20">
+				<AdditionSource>
+					<Item>ПлатежныеДокументы</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ПлатежныеДокументыУправлениеПоискомКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="ПлатежныеДокументыУправлениеПоискомРасширеннаяПодсказка" id="22"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<CheckBoxField name="ПлатежныеДокументыВыб" id="56">
+					<DataPath>Объект.ПлатежныеДокументы.Выб</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПлатежныеДокументыВыбКонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="ПлатежныеДокументыВыбРасширеннаяПодсказка" id="58"/>
+				</CheckBoxField>
+				<InputField name="ПлатежныеДокументыКодЗаявки" id="35">
+					<DataPath>Объект.ПлатежныеДокументы.КодЗаявки</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПлатежныеДокументыКодЗаявкиКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ПлатежныеДокументыКодЗаявкиРасширеннаяПодсказка" id="37"/>
+				</InputField>
+				<InputField name="ПлатежныеДокументыНомерЗаявки" id="29">
+					<DataPath>Объект.ПлатежныеДокументы.НомерЗаявки</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПлатежныеДокументыНомерЗаявкиКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ПлатежныеДокументыНомерЗаявкиРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="ПлатежныеДокументыДатаЗаезда" id="96">
+					<DataPath>Объект.ПлатежныеДокументы.ДатаЗаезда</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПлатежныеДокументыДатаЗаездаКонтекстноеМеню" id="97"/>
+					<ExtendedTooltip name="ПлатежныеДокументыДатаЗаездаРасширеннаяПодсказка" id="98"/>
+				</InputField>
+				<InputField name="ПлатежныеДокументыСтатусЗаявкиТекст" id="65">
+					<DataPath>Объект.ПлатежныеДокументы.СтатусЗаявкиТекст</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПлатежныеДокументыСтатусЗаявкиТекстКонтекстноеМеню" id="66"/>
+					<ExtendedTooltip name="ПлатежныеДокументыСтатусЗаявкиТекстРасширеннаяПодсказка" id="67"/>
+				</InputField>
+				<InputField name="ПлатежныеДокументыТуроператор" id="26">
+					<DataPath>Объект.ПлатежныеДокументы.Туроператор</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПлатежныеДокументыТуроператорКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ПлатежныеДокументыТуроператорРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="ПлатежныеДокументыКонтрагент" id="59">
+					<DataPath>Объект.ПлатежныеДокументы.Контрагент</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПлатежныеДокументыКонтрагентКонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="ПлатежныеДокументыКонтрагентРасширеннаяПодсказка" id="61"/>
+				</InputField>
+				<InputField name="ПлатежныеДокументыНомерСчета" id="44">
+					<DataPath>Объект.ПлатежныеДокументы.НомерСчета</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПлатежныеДокументыНомерСчетаКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ПлатежныеДокументыНомерСчетаРасширеннаяПодсказка" id="46"/>
+				</InputField>
+				<InputField name="ПлатежныеДокументыДатаСчета" id="47">
+					<DataPath>Объект.ПлатежныеДокументы.ДатаСчета</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПлатежныеДокументыДатаСчетаКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="ПлатежныеДокументыДатаСчетаРасширеннаяПодсказка" id="49"/>
+				</InputField>
+				<InputField name="ПлатежныеДокументыНомерБрони" id="50">
+					<DataPath>Объект.ПлатежныеДокументы.НомерБрони</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПлатежныеДокументыНомерБрониКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="ПлатежныеДокументыНомерБрониРасширеннаяПодсказка" id="52"/>
+				</InputField>
+				<InputField name="ПлатежныеДокументыДатаБрони" id="53">
+					<DataPath>Объект.ПлатежныеДокументы.ДатаБрони</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПлатежныеДокументыДатаБрониКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="ПлатежныеДокументыДатаБрониРасширеннаяПодсказка" id="55"/>
+				</InputField>
+				<InputField name="ПлатежныеДокументыСуммаОплаты" id="32">
+					<DataPath>Объект.ПлатежныеДокументы.СуммаОплаты</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПлатежныеДокументыСуммаОплатыКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ПлатежныеДокументыСуммаОплатыРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<InputField name="ПлатежныеДокументыСтатусЗаявки" id="62">
+					<DataPath>Объект.ПлатежныеДокументы.СтатусЗаявки</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПлатежныеДокументыСтатусЗаявкиКонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="ПлатежныеДокументыСтатусЗаявкиРасширеннаяПодсказка" id="64"/>
+				</InputField>
+				<InputField name="ПлатежныеДокументыИННПартнера" id="38">
+					<DataPath>Объект.ПлатежныеДокументы.ИННПартнера</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПлатежныеДокументыИННПартнераКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ПлатежныеДокументыИННПартнераРасширеннаяПодсказка" id="40"/>
+				</InputField>
+				<LabelField name="ПлатежныеДокументыНомерСтроки" id="23">
+					<DataPath>Объект.ПлатежныеДокументы.LineNumber</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПлатежныеДокументыНомерСтрокиКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ПлатежныеДокументыНомерСтрокиРасширеннаяПодсказка" id="25"/>
+				</LabelField>
+				<InputField name="ПлатежныеДокументыСуммаКлиента" id="41">
+					<DataPath>Объект.ПлатежныеДокументы.СуммаКлиента</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПлатежныеДокументыСуммаКлиентаКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ПлатежныеДокументыСуммаКлиентаРасширеннаяПодсказка" id="43"/>
+				</InputField>
+				<InputField name="ПлатежныеДокументыТуроператорИНН" id="105">
+					<DataPath>Объект.ПлатежныеДокументы.ТуроператорИНН</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПлатежныеДокументыТуроператорИННКонтекстноеМеню" id="106"/>
+					<ExtendedTooltip name="ПлатежныеДокументыТуроператорИННРасширеннаяПодсказка" id="107"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<UsualGroup name="ГруппаПодвалаСКнопкой" id="78">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа подвала с кнопкой</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа подвала с кнопкой</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПодвалаСКнопкойРасширеннаяПодсказка" id="79"/>
+			<ChildItems>
+				<Button name="ФормироватьДокументы" id="80">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ФормироватьДокументы</CommandName>
+					<ExtendedTooltip name="ФормироватьДокументыРасширеннаяПодсказка" id="81"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Настройки" id="82">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Behavior>Usual</Behavior>
+			<ExtendedTooltip name="НастройкиРасширеннаяПодсказка" id="83"/>
+			<ChildItems>
+				<CheckBoxField name="ТекущаяДатаСчетаТО" id="102">
+					<DataPath>Объект.ТекущаяДатаСчетаТО</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТекущаяДатаСчетаТОКонтекстноеМеню" id="103"/>
+					<ExtendedTooltip name="ТекущаяДатаСчетаТОРасширеннаяПодсказка" id="104"/>
+					<Events>
+						<Event name="OnChange">СохранитьВсеНастройки</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="ПодбиратьКонтрагента" id="108">
+					<DataPath>Объект.ПодбиратьКонтрагента</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПодбиратьКонтрагентаКонтекстноеМеню" id="109"/>
+					<ExtendedTooltip name="ПодбиратьКонтрагентаРасширеннаяПодсказка" id="110"/>
+					<Events>
+						<Event name="OnChange">СохранитьВсеНастройки</Event>
+					</Events>
+				</CheckBoxField>
+				<InputField name="Организация" id="84">
+					<DataPath>Объект.Организация</DataPath>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChooseType>false</ChooseType>
+					<ContextMenu name="ОрганизацияКонтекстноеМеню" id="85"/>
+					<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="86"/>
+					<Events>
+						<Event name="OnChange">СохранитьВсеНастройки</Event>
+					</Events>
+				</InputField>
+				<InputField name="СчетОрганизации" id="87">
+					<DataPath>Объект.СчетОрганизации</DataPath>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChooseType>false</ChooseType>
+					<ChoiceParameterLinks>
+						<xr:Link>
+							<xr:Name>Отбор.Организация</xr:Name>
+							<xr:DataPath xsi:type="xs:string">Объект.Организация</xr:DataPath>
+							<xr:ValueChange>Clear</xr:ValueChange>
+						</xr:Link>
+					</ChoiceParameterLinks>
+					<ContextMenu name="СчетОрганизацииКонтекстноеМеню" id="88"/>
+					<ExtendedTooltip name="СчетОрганизацииРасширеннаяПодсказка" id="89"/>
+					<Events>
+						<Event name="OnChange">СохранитьВсеНастройки</Event>
+					</Events>
+				</InputField>
+				<InputField name="ОчередностьПлатежа" id="90">
+					<DataPath>Объект.ОчередностьПлатежа</DataPath>
+					<ChooseType>false</ChooseType>
+					<ContextMenu name="ОчередностьПлатежаКонтекстноеМеню" id="91"/>
+					<ExtendedTooltip name="ОчередностьПлатежаРасширеннаяПодсказка" id="92"/>
+					<Events>
+						<Event name="OnChange">СохранитьВсеНастройки</Event>
+					</Events>
+				</InputField>
+				<InputField name="КассаРасчета" id="93">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расчет через</v8:content>
+						</v8:item>
+					</Title>
+					<ListChoiceMode>true</ListChoiceMode>
+					<ChooseType>false</ChooseType>
+					<TextEdit>false</TextEdit>
+					<ContextMenu name="КассаРасчетаКонтекстноеМеню" id="94"/>
+					<ExtendedTooltip name="КассаРасчетаРасширеннаяПодсказка" id="95"/>
+					<Events>
+						<Event name="OnChange">СохранитьВсеНастройки</Event>
+					</Events>
+				</InputField>
+				<InputField name="Состояние" id="99">
+					<DataPath>Объект.Состояние</DataPath>
+					<ContextMenu name="СостояниеКонтекстноеМеню" id="100"/>
+					<ExtendedTooltip name="СостояниеРасширеннаяПодсказка" id="101"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ЭТ_ЗазрузкаПлатежныхПоручений</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПолучитьПлатежныеПоручения" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить платежные поручения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьПлатежныеПоручения</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ФормироватьДокументы" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Формировать документы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Формировать документы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ФормироватьДокументы</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

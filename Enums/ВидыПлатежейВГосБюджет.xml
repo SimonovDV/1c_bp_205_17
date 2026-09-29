@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Enum uuid="fc7ef788-e701-49e2-ac76-f582713b098f">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ВидыПлатежейВГосБюджет" category="Ref">
+				<xr:TypeId>916f65a8-d8fc-422d-9a09-d7f7decc4c29</xr:TypeId>
+				<xr:ValueId>06171a05-4e4a-49eb-a7b6-05a092018b6d</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ВидыПлатежейВГосБюджет" category="Manager">
+				<xr:TypeId>1870abc8-a3fb-445c-b8b0-709ad7b99647</xr:TypeId>
+				<xr:ValueId>c0553164-3eb8-40b1-94e0-08190a39feb1</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ВидыПлатежейВГосБюджет" category="List">
+				<xr:TypeId>75305676-6c5b-4c6e-bc95-1a4e6f465112</xr:TypeId>
+				<xr:ValueId>e59fbc46-0a4c-4964-9d59-ffbe2dbd0747</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ВидыПлатежейВГосБюджет</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>a59e17fa-bf5d-494a-a63c-56181384bb44</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Enum>
+</MetaDataObject>

@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Document uuid="b933c36a-1176-46dc-aa0c-7c01fcdb5f56">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.ПоступлениеНаРасчетныйСчет" category="Object">
+				<xr:TypeId>65064134-f755-48b6-a3f0-bb0967664d6d</xr:TypeId>
+				<xr:ValueId>3bf2cbc5-69d0-4895-8bcd-c448a3b87562</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.ПоступлениеНаРасчетныйСчет" category="Ref">
+				<xr:TypeId>63b212e0-250e-48f7-8dfd-febda8262a7d</xr:TypeId>
+				<xr:ValueId>484ec9df-3d0c-4a29-a36d-b753b8e940fc</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.ПоступлениеНаРасчетныйСчет" category="Selection">
+				<xr:TypeId>ecd38476-a735-4b15-b8d4-9db4dc20496f</xr:TypeId>
+				<xr:ValueId>927ab564-495d-4e72-ad3e-5929f14e7765</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.ПоступлениеНаРасчетныйСчет" category="List">
+				<xr:TypeId>766ff59b-d95a-4622-a7c3-6c660527cec4</xr:TypeId>
+				<xr:ValueId>6b4341a0-26e4-405a-805a-cb9aab081282</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.ПоступлениеНаРасчетныйСчет" category="Manager">
+				<xr:TypeId>86cc5700-026a-4ff6-a5fc-46f737159fbd</xr:TypeId>
+				<xr:ValueId>03a2395e-1ef8-4b2f-beda-e3fe73833a36</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:PropertyState>
+				<xr:Property>ObjectModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+			<xr:PropertyState>
+				<xr:Property>ManagerModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ПоступлениеНаРасчетныйСчет</Name>
+			<Comment/>
+			<NumberType>String</NumberType>
+			<NumberLength>11</NumberLength>
+			<NumberAllowedLength>Fixed</NumberAllowedLength>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<Form>ФормаДокументаОднострочная</Form>
+			<TabularSection uuid="eee93d9b-d2f9-4f92-acab-337df9cc374c">
+				<InternalInfo>
+					<xr:GeneratedType name="DocumentTabularSection.ПоступлениеНаРасчетныйСчет.РасшифровкаПлатежа" category="TabularSection">
+						<xr:TypeId>4c718a9f-79bd-431d-9e5c-08acca46038a</xr:TypeId>
+						<xr:ValueId>32a9a338-fdd8-4524-a45e-ee29a675694e</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DocumentTabularSectionRow.ПоступлениеНаРасчетныйСчет.РасшифровкаПлатежа" category="TabularSectionRow">
+						<xr:TypeId>18f92b40-7067-4262-a1a1-368212860028</xr:TypeId>
+						<xr:ValueId>429890d8-262c-4c6e-8f82-3b7bae124fed</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>РасшифровкаПлатежа</Name>
+					<Comment/>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="6cc29509-4eae-4986-8dcd-139dea578385">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>ДоговорКонтрагента</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>c256c996-1337-4bf4-b3db-00b529af1525</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>cfg:CatalogRef.ДоговорыКонтрагентов</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+			<TabularSection uuid="6f0d52a2-2e02-4181-b132-dffaf8a39545">
+				<InternalInfo>
+					<xr:GeneratedType name="DocumentTabularSection.ПоступлениеНаРасчетныйСчет.РеквизитыКонтрагента" category="TabularSection">
+						<xr:TypeId>ca933ceb-a15c-45cb-a56b-edb4827b55c8</xr:TypeId>
+						<xr:ValueId>17b9e2c5-e992-4943-a1ba-0982d35e32bf</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DocumentTabularSectionRow.ПоступлениеНаРасчетныйСчет.РеквизитыКонтрагента" category="TabularSectionRow">
+						<xr:TypeId>ead243db-a1ea-43bc-afb1-056a85766960</xr:TypeId>
+						<xr:ValueId>755a7b85-baf3-4515-b45f-a90584e8571e</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>РеквизитыКонтрагента</Name>
+					<Comment/>
+				</Properties>
+				<ChildObjects/>
+			</TabularSection>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

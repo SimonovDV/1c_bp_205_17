@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Реестр оплат</v8:content>
+		</v8:item>
+	</Title>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="4">
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="5"/>
+			<ChildItems>
+				<InputField name="Каталог" id="1">
+					<DataPath>Каталог</DataPath>
+					<ChoiceButton>true</ChoiceButton>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КаталогКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КаталогРасширеннаяПодсказка" id="3"/>
+					<Events>
+						<Event name="StartChoice">КаталогНачалоВыбора</Event>
+					</Events>
+				</InputField>
+				<Button name="КомандаЗагрузить" id="6">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.КомандаЗагрузить</CommandName>
+					<TextColor>#333333</TextColor>
+					<BackColor>#FFCC00</BackColor>
+					<Font ref="style:NormalTextFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+					<ExtendedTooltip name="КомандаЗагрузитьРасширеннаяПодсказка" id="7"/>
+				</Button>
+				<Button name="ФормаОчиститьКаталог" id="60">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ОчиститьКаталог</CommandName>
+					<ExtendedTooltip name="ФормаОчиститьКаталогРасширеннаяПодсказка" id="61"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<CheckBoxField name="УбратьДубли" id="62">
+			<DataPath>УбратьДубли</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исключить дублирующие записи</v8:content>
+				</v8:item>
+			</Title>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="УбратьДублиКонтекстноеМеню" id="63"/>
+			<ExtendedTooltip name="УбратьДублиРасширеннаяПодсказка" id="64"/>
+		</CheckBoxField>
+		<Table name="ЗаписиЗагрузки" id="8">
+			<SelectionMode>SingleRow</SelectionMode>
+			<RowSelectionMode>Row</RowSelectionMode>
+			<Header>false</Header>
+			<AutoAddIncomplete>false</AutoAddIncomplete>
+			<AutoMarkIncomplete>false</AutoMarkIncomplete>
+			<SearchOnInput>DontUse</SearchOnInput>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ЗаписиЗагрузки</DataPath>
+			<SearchStringLocation>Top</SearchStringLocation>
+			<ViewStatusLocation>Top</ViewStatusLocation>
+			<SearchControlLocation>CommandBar</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ЗаписиЗагрузкиКонтекстноеМеню" id="9"/>
+			<AutoCommandBar name="ЗаписиЗагрузкиКоманднаяПанель" id="10">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ЗаписиЗагрузкиРасширеннаяПодсказка" id="11"/>
+			<SearchStringAddition name="ЗаписиЗагрузкиСтрокаПоиска" id="12">
+				<AdditionSource>
+					<Item>ЗаписиЗагрузки</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ЗаписиЗагрузкиСтрокаПоискаКонтекстноеМеню" id="13"/>
+				<ExtendedTooltip name="ЗаписиЗагрузкиСтрокаПоискаРасширеннаяПодсказка" id="14"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ЗаписиЗагрузкиСостояниеПросмотра" id="15">
+				<AdditionSource>
+					<Item>ЗаписиЗагрузки</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ЗаписиЗагрузкиСостояниеПросмотраКонтекстноеМеню" id="16"/>
+				<ExtendedTooltip name="ЗаписиЗагрузкиСостояниеПросмотраРасширеннаяПодсказка" id="17"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ЗаписиЗагрузкиУправлениеПоиском" id="18">
+				<AdditionSource>
+					<Item>ЗаписиЗагрузки</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ЗаписиЗагрузкиУправлениеПоискомКонтекстноеМеню" id="19"/>
+				<ExtendedTooltip name="ЗаписиЗагрузкиУправлениеПоискомРасширеннаяПодсказка" id="20"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ЗаписиЗагрузкиНомерСтроки" id="21">
+					<DataPath>Объект.ЗаписиЗагрузки.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЗаписиЗагрузкиНомерСтрокиКонтекстноеМеню" id="22"/>
+					<ExtendedTooltip name="ЗаписиЗагрузкиНомерСтрокиРасширеннаяПодсказка" id="23"/>
+				</LabelField>
+				<InputField name="ЗаписиЗагрузкиФайл" id="24">
+					<DataPath>Объект.ЗаписиЗагрузки.Файл</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ЗаписиЗагрузкиФайлКонтекстноеМеню" id="25"/>
+					<ExtendedTooltip name="ЗаписиЗагрузкиФайлРасширеннаяПодсказка" id="26"/>
+				</InputField>
+				<InputField name="ЗаписиЗагрузкип1" id="27">
+					<DataPath>Объект.ЗаписиЗагрузки.п1</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ЗаписиЗагрузкип1КонтекстноеМеню" id="28"/>
+					<ExtendedTooltip name="ЗаписиЗагрузкип1РасширеннаяПодсказка" id="29"/>
+				</InputField>
+				<InputField name="ЗаписиЗагрузкип2" id="30">
+					<DataPath>Объект.ЗаписиЗагрузки.п2</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ЗаписиЗагрузкип2КонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="ЗаписиЗагрузкип2РасширеннаяПодсказка" id="32"/>
+				</InputField>
+				<InputField name="ЗаписиЗагрузкип3" id="33">
+					<DataPath>Объект.ЗаписиЗагрузки.п3</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ЗаписиЗагрузкип3КонтекстноеМеню" id="34"/>
+					<ExtendedTooltip name="ЗаписиЗагрузкип3РасширеннаяПодсказка" id="35"/>
+				</InputField>
+				<InputField name="ЗаписиЗагрузкип4" id="36">
+					<DataPath>Объект.ЗаписиЗагрузки.п4</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ЗаписиЗагрузкип4КонтекстноеМеню" id="37"/>
+					<ExtendedTooltip name="ЗаписиЗагрузкип4РасширеннаяПодсказка" id="38"/>
+				</InputField>
+				<InputField name="ЗаписиЗагрузкип5" id="39">
+					<DataPath>Объект.ЗаписиЗагрузки.п5</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ЗаписиЗагрузкип5КонтекстноеМеню" id="40"/>
+					<ExtendedTooltip name="ЗаписиЗагрузкип5РасширеннаяПодсказка" id="41"/>
+				</InputField>
+				<InputField name="ЗаписиЗагрузкип6" id="42">
+					<DataPath>Объект.ЗаписиЗагрузки.п6</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ЗаписиЗагрузкип6КонтекстноеМеню" id="43"/>
+					<ExtendedTooltip name="ЗаписиЗагрузкип6РасширеннаяПодсказка" id="44"/>
+				</InputField>
+				<InputField name="ЗаписиЗагрузкип7" id="45">
+					<DataPath>Объект.ЗаписиЗагрузки.п7</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ЗаписиЗагрузкип7КонтекстноеМеню" id="46"/>
+					<ExtendedTooltip name="ЗаписиЗагрузкип7РасширеннаяПодсказка" id="47"/>
+				</InputField>
+				<InputField name="ЗаписиЗагрузкип8" id="48">
+					<DataPath>Объект.ЗаписиЗагрузки.п8</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ЗаписиЗагрузкип8КонтекстноеМеню" id="49"/>
+					<ExtendedTooltip name="ЗаписиЗагрузкип8РасширеннаяПодсказка" id="50"/>
+				</InputField>
+				<InputField name="ЗаписиЗагрузкип9" id="51">
+					<DataPath>Объект.ЗаписиЗагрузки.п9</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ЗаписиЗагрузкип9КонтекстноеМеню" id="52"/>
+					<ExtendedTooltip name="ЗаписиЗагрузкип9РасширеннаяПодсказка" id="53"/>
+				</InputField>
+				<InputField name="ЗаписиЗагрузкип10" id="54">
+					<DataPath>Объект.ЗаписиЗагрузки.п10</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ЗаписиЗагрузкип10КонтекстноеМеню" id="55"/>
+					<ExtendedTooltip name="ЗаписиЗагрузкип10РасширеннаяПодсказка" id="56"/>
+				</InputField>
+				<InputField name="ЗаписиЗагрузкип11" id="57">
+					<DataPath>Объект.ЗаписиЗагрузки.п11</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ЗаписиЗагрузкип11КонтекстноеМеню" id="58"/>
+					<ExtendedTooltip name="ЗаписиЗагрузкип11РасширеннаяПодсказка" id="59"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ЭТ_РеестрПлатежей</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Каталог" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Каталог</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="УбратьДубли" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Убрать дубли</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаЗагрузить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда загрузить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаЗагрузить</Action>
+		</Command>
+		<Command name="ОчиститьКаталог" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить каталог</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить каталог</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОчиститьКаталог</Action>
+		</Command>
+	</Commands>
+</Form>

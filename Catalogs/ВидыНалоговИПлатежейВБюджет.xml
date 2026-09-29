@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Catalog uuid="be47ae6c-961c-4f7f-b6d6-a3d9e0dcc82e">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.ВидыНалоговИПлатежейВБюджет" category="Object">
+				<xr:TypeId>e4df30aa-43f7-4aa4-9f32-9f9ac008ce44</xr:TypeId>
+				<xr:ValueId>da5b6e8b-4bda-4127-864e-919b4f8e925b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.ВидыНалоговИПлатежейВБюджет" category="Ref">
+				<xr:TypeId>50d7a347-f21a-401a-a69f-31eeb9df923b</xr:TypeId>
+				<xr:ValueId>a89af512-6cc6-4c45-9003-e0bb40130748</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.ВидыНалоговИПлатежейВБюджет" category="Selection">
+				<xr:TypeId>07823b15-c728-44fb-97a7-5573d7082f4c</xr:TypeId>
+				<xr:ValueId>9acf75b3-0d94-49b0-9035-00024b615798</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.ВидыНалоговИПлатежейВБюджет" category="List">
+				<xr:TypeId>e0aa4c25-6a11-4668-80e3-a6b62af2ecc2</xr:TypeId>
+				<xr:ValueId>c785d698-c28d-469b-acba-3d2a95d8c951</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.ВидыНалоговИПлатежейВБюджет" category="Manager">
+				<xr:TypeId>82d35f32-dfb4-41f9-9a32-c38d1cba4b11</xr:TypeId>
+				<xr:ValueId>30d6fffa-507f-4aeb-8e4f-b17070af9f09</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ВидыНалоговИПлатежейВБюджет</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>422069f7-daf4-4432-bce9-a26226b82289</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

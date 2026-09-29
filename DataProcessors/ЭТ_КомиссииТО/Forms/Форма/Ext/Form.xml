@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="Страницы" id="24">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="25"/>
+			<ChildItems>
+				<Page name="Комиссия" id="28">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комиссия</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комиссия</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ExtendedTooltip name="КомиссияРасширеннаяПодсказка" id="29"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаПоиска" id="30">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа поиска</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа поиска</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Behavior>Usual</Behavior>
+							<ShowTitle>false</ShowTitle>
+							<BackColor>#FFFF99</BackColor>
+							<ExtendedTooltip name="ГруппаПоискаРасширеннаяПодсказка" id="31"/>
+							<ChildItems>
+								<InputField name="КодЭлемента" id="47">
+									<DataPath>Объект.КодЭлемента</DataPath>
+									<ContextMenu name="КодЭлементаКонтекстноеМеню" id="48"/>
+									<ExtendedTooltip name="КодЭлементаРасширеннаяПодсказка" id="49"/>
+								</InputField>
+								<InputField name="Туроператор" id="7">
+									<DataPath>Объект.Туроператор</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<VerticalStretch>false</VerticalStretch>
+									<ContextMenu name="ТуроператорКонтекстноеМеню" id="8"/>
+									<ExtendedTooltip name="ТуроператорРасширеннаяПодсказка" id="9"/>
+								</InputField>
+								<InputField name="Дата" id="13">
+									<DataPath>Объект.Дата</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДатаКонтекстноеМеню" id="14"/>
+									<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="15"/>
+								</InputField>
+								<Button name="Поиск" id="36">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.Поиск</CommandName>
+									<ExtendedTooltip name="ПоискРасширеннаяПодсказка" id="37"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДанных" id="32">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа данных</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа данных</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+							<HorizontalAlign>Left</HorizontalAlign>
+							<Behavior>Usual</Behavior>
+							<ShowTitle>false</ShowTitle>
+							<ThroughAlign>Use</ThroughAlign>
+							<ExtendedTooltip name="ГруппаДанныхРасширеннаяПодсказка" id="33"/>
+							<ChildItems>
+								<UsualGroup name="Данные" id="40">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Данные</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Данные</v8:content>
+										</v8:item>
+									</ToolTip>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Behavior>Usual</Behavior>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ДанныеРасширеннаяПодсказка" id="41"/>
+									<ChildItems>
+										<InputField name="ТипКомиссии" id="10">
+											<DataPath>Объект.ТипКомиссии</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ListChoiceMode>true</ListChoiceMode>
+											<ChooseType>false</ChooseType>
+											<ContextMenu name="ТипКомиссииКонтекстноеМеню" id="11"/>
+											<ExtendedTooltip name="ТипКомиссииРасширеннаяПодсказка" id="12"/>
+										</InputField>
+										<InputField name="Значение" id="16">
+											<DataPath>Объект.Значение</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ЗначениеКонтекстноеМеню" id="17"/>
+											<ExtendedTooltip name="ЗначениеРасширеннаяПодсказка" id="18"/>
+										</InputField>
+										<CheckBoxField name="Состояние" id="19">
+											<DataPath>Объект.Состояние</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Удалена</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="СостояниеКонтекстноеМеню" id="20"/>
+											<ExtendedTooltip name="СостояниеРасширеннаяПодсказка" id="21"/>
+										</CheckBoxField>
+										<Button name="СохранитьЗначение" id="38">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.СохранитьЗначение</CommandName>
+											<ExtendedTooltip name="СохранитьЗначениеРасширеннаяПодсказка" id="39"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="Настройки" id="26">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ExtendedTooltip name="НастройкиРасширеннаяПодсказка" id="27"/>
+					<ChildItems>
+						<InputField name="КомиссияТОПуть" id="1">
+							<DataPath>Объект.КомиссияТОПуть</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="КомиссияТОПутьКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="КомиссияТОПутьРасширеннаяПодсказка" id="3"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройки</Event>
+							</Events>
+						</InputField>
+						<InputField name="КомиссияТОКлюч" id="4">
+							<DataPath>Объект.КомиссияТОКлюч</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="КомиссияТОКлючКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="КомиссияТОКлючРасширеннаяПодсказка" id="6"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройки</Event>
+							</Events>
+						</InputField>
+						<InputField name="КомиссияАгент" id="44">
+							<DataPath>Объект.КомиссияАгент</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Агент</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="КомиссияАгентКонтекстноеМеню" id="45"/>
+							<ExtendedTooltip name="КомиссияАгентРасширеннаяПодсказка" id="46"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройки</Event>
+							</Events>
+						</InputField>
+						<Button name="СохранитьНастройки" id="34">
+							<Type>UsualButton</Type>
+							<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+							<CommandName>Form.Command.СохранитьНастройки</CommandName>
+							<ExtendedTooltip name="СохранитьНастройкиРасширеннаяПодсказка" id="35"/>
+						</Button>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ЭТ_КомиссииТО</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СохранитьНастройки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СохранитьНастройки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Поиск" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поиск</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поиск</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Поиск</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СохранитьЗначение" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить значение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СохранитьЗначение</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

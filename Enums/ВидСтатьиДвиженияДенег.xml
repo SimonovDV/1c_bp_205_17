@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Enum uuid="b530656e-8bfd-4ee8-8b3f-c5ce6eb6351a">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ВидСтатьиДвиженияДенег" category="Ref">
+				<xr:TypeId>9cbadcdb-fd8a-4f76-aa45-066dd8eaf294</xr:TypeId>
+				<xr:ValueId>97a83077-a9ee-4706-9a13-bc4dddafb83c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ВидСтатьиДвиженияДенег" category="Manager">
+				<xr:TypeId>ce792be3-42df-4bce-8184-6ceb94f562e3</xr:TypeId>
+				<xr:ValueId>cf245a34-3f06-4e07-b047-49f30d220991</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ВидСтатьиДвиженияДенег" category="List">
+				<xr:TypeId>9be7767f-25f2-48fc-bf06-ccfe0829554d</xr:TypeId>
+				<xr:ValueId>e75fa248-2502-46c0-902f-48a60b9070db</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ВидСтатьиДвиженияДенег</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>cec1d28c-d402-48ee-a003-e56a20a1a82d</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="c836214a-eb55-4e96-80d4-40a5c612da07">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ДоходРасход</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>26bc9bb9-1f8f-426f-b71f-257f50270c7f</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="674a79aa-02be-4481-9866-24574577e0f7">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Доход</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>16400729-e478-443a-b39c-a7a89adcb1f1</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

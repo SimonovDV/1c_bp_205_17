@@ -1,0 +1,1853 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="145">
+			<EnableContentChange>true</EnableContentChange>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="146"/>
+			<ChildItems>
+				<CheckBoxField name="ВыключитьМодуль" id="118">
+					<DataPath>Объект.ВыключитьМодуль</DataPath>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВыключитьМодульКонтекстноеМеню" id="119"/>
+					<ExtendedTooltip name="ВыключитьМодульРасширеннаяПодсказка" id="120"/>
+					<Events>
+						<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+					</Events>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="Группа6" id="129">
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="130"/>
+			<ChildItems>
+				<Page name="Основные" id="131">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основные</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основные</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>HorizontalIfPossible</Group>
+					<ExtendedTooltip name="ОсновныеРасширеннаяПодсказка" id="132"/>
+					<ChildItems>
+						<InputField name="КлючАПИ" id="1">
+							<DataPath>Объект.ApiKey</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="КлючАПИКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="КлючАПИРасширеннаяПодсказка" id="3"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</InputField>
+						<CheckBoxField name="РазрешитьПроведениеБезСБ" id="22">
+							<DataPath>Объект.РазрешитьПроведениеБезСБ</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="РазрешитьПроведениеБезСБКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="РазрешитьПроведениеБезСБРасширеннаяПодсказка" id="24"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</CheckBoxField>
+						<CheckBoxField name="УведомленияОбШоибках" id="249">
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="УведомленияОбШоибкахКонтекстноеМеню" id="250"/>
+							<ExtendedTooltip name="УведомленияОбШоибкахРасширеннаяПодсказка" id="251"/>
+						</CheckBoxField>
+						<InputField name="Префикс" id="44">
+							<DataPath>Объект.Префикс</DataPath>
+							<ContextMenu name="ПрефиксКонтекстноеМеню" id="45"/>
+							<ExtendedTooltip name="ПрефиксРасширеннаяПодсказка" id="46"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</InputField>
+						<InputField name="ВалютаДокументов1С" id="115">
+							<DataPath>Объект.ВалютаДокументов1С</DataPath>
+							<OpenButton>false</OpenButton>
+							<ContextMenu name="ВалютаДокументов1СКонтекстноеМеню" id="116"/>
+							<ExtendedTooltip name="ВалютаДокументов1СРасширеннаяПодсказка" id="117"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</InputField>
+						<InputField name="ВалютаДокументов" id="59">
+							<DataPath>Объект.ВалютаДокументов</DataPath>
+							<ListChoiceMode>true</ListChoiceMode>
+							<ChooseType>false</ChooseType>
+							<ContextMenu name="ВалютаДокументовКонтекстноеМеню" id="60"/>
+							<ExtendedTooltip name="ВалютаДокументовРасширеннаяПодсказка" id="61"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</InputField>
+						<InputField name="СчетОрганизации" id="7">
+							<DataPath>Объект.СчетОрганизации</DataPath>
+							<QuickChoice>true</QuickChoice>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks>
+								<xr:Link>
+									<xr:Name>Организация</xr:Name>
+									<xr:DataPath xsi:type="xs:string">Объект.Организация</xr:DataPath>
+									<xr:ValueChange>Clear</xr:ValueChange>
+								</xr:Link>
+							</ChoiceParameterLinks>
+							<ContextMenu name="СчетОрганизацииКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="СчетОрганизацииРасширеннаяПодсказка" id="9"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</InputField>
+						<InputField name="Организация" id="4">
+							<DataPath>Объект.Организация</DataPath>
+							<ContextMenu name="ОрганизацияКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="6"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</InputField>
+						<InputField name="ОсновныеГруппаБанков" id="309">
+							<DataPath>Объект.ОсновныеГруппаБанков</DataPath>
+							<OpenButton>false</OpenButton>
+							<QuickChoice>true</QuickChoice>
+							<ChoiceFoldersAndItems>Folders</ChoiceFoldersAndItems>
+							<ChooseType>false</ChooseType>
+							<ContextMenu name="ОсновныеГруппаБанковКонтекстноеМеню" id="310"/>
+							<ExtendedTooltip name="ОсновныеГруппаБанковРасширеннаяПодсказка" id="311"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</InputField>
+						<InputField name="ПользовательЮОН" id="232">
+							<DataPath>Объект.ПользовательЮОН</DataPath>
+							<DropListButton>true</DropListButton>
+							<ListChoiceMode>true</ListChoiceMode>
+							<ChooseType>false</ChooseType>
+							<ContextMenu name="ПользовательЮОНКонтекстноеМеню" id="233"/>
+							<ExtendedTooltip name="ПользовательЮОНРасширеннаяПодсказка" id="234"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</InputField>
+						<InputField name="КолВоПопытокЮОН" id="235">
+							<DataPath>Объект.КолВоПопытокЮОН</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Кол-во попыток на запрос</v8:content>
+								</v8:item>
+							</Title>
+							<ListChoiceMode>true</ListChoiceMode>
+							<MinValue xsi:type="xs:decimal">0</MinValue>
+							<MaxValue xsi:type="xs:decimal">9</MaxValue>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>автоматическое определение</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">0</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>1</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">1</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>2</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">2</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>3</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">3</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>4</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">4</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>5</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">5</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>6</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">6</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>7</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">7</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>8</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">8</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>9</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">9</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="КолВоПопытокЮОНКонтекстноеМеню" id="236"/>
+							<ExtendedTooltip name="КолВоПопытокЮОНРасширеннаяПодсказка" id="237"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</InputField>
+						<InputField name="ОсновныеКешированиеСекунды" id="300">
+							<DataPath>Объект.ОсновныеКешированиеСекунды</DataPath>
+							<ContextMenu name="ОсновныеКешированиеСекундыКонтекстноеМеню" id="301"/>
+							<ExtendedTooltip name="ОсновныеКешированиеСекундыРасширеннаяПодсказка" id="302"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</InputField>
+						<LabelDecoration name="ТекущийЕмайл" id="264">
+							<HorizontalStretch>true</HorizontalStretch>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Текущий емайл</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ТекущийЕмайлКонтекстноеМеню" id="265"/>
+							<ExtendedTooltip name="ТекущийЕмайлРасширеннаяПодсказка" id="266"/>
+						</LabelDecoration>
+						<CheckBoxField name="УведомлятьМенеджераОбОплатеКлиентаНаПочту" id="382">
+							<DataPath>Объект.УведомлятьМенеджераОбОплатеКлиентаНаПочту</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="УведомлятьМенеджераОбОплатеКлиентаНаПочтуКонтекстноеМеню" id="383"/>
+							<ExtendedTooltip name="УведомлятьМенеджераОбОплатеКлиентаНаПочтуРасширеннаяПодсказка" id="384"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</CheckBoxField>
+						<InputField name="ОрганизацияДопуск" id="376">
+							<DataPath>Объект.ОрганизацияДопуск</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ОрганизацияДопускКонтекстноеМеню" id="377"/>
+							<ExtendedTooltip name="ОрганизацияДопускРасширеннаяПодсказка" id="378"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</InputField>
+						<InputField name="ДатаЗакрытияРасчетныхДокументов" id="379">
+							<DataPath>Объект.ДатаЗакрытияРасчетныхДокументов</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Закрытый период</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДатаЗакрытияРасчетныхДокументовКонтекстноеМеню" id="380"/>
+							<ExtendedTooltip name="ДатаЗакрытияРасчетныхДокументовРасширеннаяПодсказка" id="381"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="Туроператоры" id="25">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Туроператоры / Поставщики</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Туроператоры</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ТуроператорыРасширеннаяПодсказка" id="26"/>
+					<ChildItems>
+						<UsualGroup name="Группа9" id="370">
+							<ExtendedTooltip name="Группа9РасширеннаяПодсказка" id="371"/>
+							<ChildItems>
+								<UsualGroup name="Группа10" id="372">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Агентская деятельность</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<ExtendedTooltip name="Группа10РасширеннаяПодсказка" id="373"/>
+									<ChildItems>
+										<InputField name="КаталогПартнеров" id="10">
+											<DataPath>Объект.КаталогПартнеров</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Каталог партнеров (агенты)</v8:content>
+												</v8:item>
+											</Title>
+											<ChoiceFoldersAndItems>Folders</ChoiceFoldersAndItems>
+											<ContextMenu name="КаталогПартнеровКонтекстноеМеню" id="11"/>
+											<ExtendedTooltip name="КаталогПартнеровРасширеннаяПодсказка" id="12"/>
+											<Events>
+												<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+											</Events>
+										</InputField>
+										<InputField name="ВидДоговораТО" id="13">
+											<DataPath>Объект.ВидДоговораТО</DataPath>
+											<ContextMenu name="ВидДоговораТОКонтекстноеМеню" id="14"/>
+											<ExtendedTooltip name="ВидДоговораТОРасширеннаяПодсказка" id="15"/>
+											<Events>
+												<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+											</Events>
+										</InputField>
+										<InputField name="ТуроператорыТипТО" id="196">
+											<DataPath>Объект.ТуроператорыТипТО</DataPath>
+											<ListChoiceMode>true</ListChoiceMode>
+											<ChooseType>false</ChooseType>
+											<ContextMenu name="ТуроператорыТипТОКонтекстноеМеню" id="197"/>
+											<ExtendedTooltip name="ТуроператорыТипТОРасширеннаяПодсказка" id="198"/>
+											<Events>
+												<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Группа11" id="374">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Услуги</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<ExtendedTooltip name="Группа11РасширеннаяПодсказка" id="375"/>
+									<ChildItems>
+										<InputField name="КаталогПоставщиков" id="364">
+											<DataPath>Объект.КаталогПоставщиков</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Каталог поставщиков</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ChoiceFoldersAndItems>Folders</ChoiceFoldersAndItems>
+											<ContextMenu name="КаталогПоставщиковКонтекстноеМеню" id="365"/>
+											<ExtendedTooltip name="КаталогПоставщиковРасширеннаяПодсказка" id="366"/>
+											<Events>
+												<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+											</Events>
+										</InputField>
+										<InputField name="ВидДоговораПоставщик" id="361">
+											<DataPath>Объект.ВидДоговораПоставщик</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ВидДоговораПоставщикКонтекстноеМеню" id="362"/>
+											<ExtendedTooltip name="ВидДоговораПоставщикРасширеннаяПодсказка" id="363"/>
+											<Events>
+												<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="СтатьяДвиженияДенежныхСредств" id="19">
+							<DataPath>Объект.СтатьяДвиженияДенежныхСредств</DataPath>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ContextMenu name="СтатьяДвиженияДенежныхСредствКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="СтатьяДвиженияДенежныхСредствРасширеннаяПодсказка" id="21"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</InputField>
+						<InputField name="КассаТО" id="50">
+							<DataPath>Объект.КассаТО</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Расчет с ТО через (оставить пустым для автоматического определения)</v8:content>
+								</v8:item>
+							</Title>
+							<ClearButton>true</ClearButton>
+							<ListChoiceMode>true</ListChoiceMode>
+							<ChooseType>false</ChooseType>
+							<ContextMenu name="КассаТОКонтекстноеМеню" id="51"/>
+							<ExtendedTooltip name="КассаТОРасширеннаяПодсказка" id="52"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</InputField>
+						<InputField name="КаталогПомойки" id="106">
+							<DataPath>Объект.КаталогПомойки</DataPath>
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Каталог для удаленных элементов</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="КаталогПомойкиКонтекстноеМеню" id="107"/>
+							<ExtendedTooltip name="КаталогПомойкиРасширеннаяПодсказка" id="108"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</InputField>
+						<CheckBoxField name="ТекущаяДатаСчетаТО" id="190">
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ТекущаяДатаСчетаТОКонтекстноеМеню" id="191"/>
+							<ExtendedTooltip name="ТекущаяДатаСчетаТОРасширеннаяПодсказка" id="192"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</CheckBoxField>
+						<InputField name="ТуроператорыЗапретСозданияВЮОН" id="279">
+							<DataPath>Объект.ТуроператорыЗапретСозданияВЮОН</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Создание ТО в U-ON</v8:content>
+								</v8:item>
+							</Title>
+							<DropListButton>true</DropListButton>
+							<ChoiceButton>false</ChoiceButton>
+							<ContextMenu name="ТуроператорыЗапретСозданияВЮОНКонтекстноеМеню" id="280"/>
+							<ExtendedTooltip name="ТуроператорыЗапретСозданияВЮОНРасширеннаяПодсказка" id="281"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</InputField>
+						<CheckBoxField name="ПроводитьПлатежныеДокументыСОшибкамиПоставщики" id="261">
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ПроводитьПлатежныеДокументыСОшибкамиПоставщикиКонтекстноеМеню" id="262"/>
+							<ExtendedTooltip name="ПроводитьПлатежныеДокументыСОшибкамиПоставщикиРасширеннаяПодсказка" id="263"/>
+						</CheckBoxField>
+						<CheckBoxField name="УведомленияОбОшибкахПлатежейПоставщиков" id="270">
+							<DataPath>Объект.УведомленияОбОшибкахПлатежейПоставщиков</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="УведомленияОбОшибкахПлатежейПоставщиковКонтекстноеМеню" id="271"/>
+							<ExtendedTooltip name="УведомленияОбОшибкахПлатежейПоставщиковРасширеннаяПодсказка" id="272"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</CheckBoxField>
+						<InputField name="ТуроператорыУведомленияНовыйВЮОН" id="199">
+							<DataPath>Объект.ТуроператорыУведомленияНовыйВЮОН</DataPath>
+							<ContextMenu name="ТуроператорыУведомленияНовыйВЮОНКонтекстноеМеню" id="200"/>
+							<ExtendedTooltip name="ТуроператорыУведомленияНовыйВЮОНРасширеннаяПодсказка" id="201"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</InputField>
+						<CheckBoxField name="ПроводитьПлатежныеДокументыСОшибкамиПоставщиков" id="273">
+							<DataPath>Объект.ПроводитьПлатежныеДокументыСОшибкамиПоставщиков</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ПроводитьПлатежныеДокументыСОшибкамиПоставщиковКонтекстноеМеню" id="274"/>
+							<ExtendedTooltip name="ПроводитьПлатежныеДокументыСОшибкамиПоставщиковРасширеннаяПодсказка" id="275"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</CheckBoxField>
+						<CheckBoxField name="ТуроператорыИспользоватьШаблонДоговора" id="347">
+							<DataPath>Объект.ТуроператорыИспользоватьШаблонДоговора</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ТуроператорыИспользоватьШаблонДоговораКонтекстноеМеню" id="348"/>
+							<ExtendedTooltip name="ТуроператорыИспользоватьШаблонДоговораРасширеннаяПодсказка" id="349"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</CheckBoxField>
+						<UsualGroup name="ГруппаОснованиеПлатежка" id="227">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Назначение платежа в платежных поручениях + документ списание с р/с</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа основание платежка</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<United>false</United>
+							<ExtendedTooltip name="ГруппаОснованиеПлатежкаРасширеннаяПодсказка" id="228"/>
+							<ChildItems>
+								<Table name="ПлатежкаОснование" id="205">
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>Объект.ПлатежкаОснование</DataPath>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="ПлатежкаОснованиеКонтекстноеМеню" id="206"/>
+									<AutoCommandBar name="ПлатежкаОснованиеКоманднаяПанель" id="207"/>
+									<ExtendedTooltip name="ПлатежкаОснованиеРасширеннаяПодсказка" id="208"/>
+									<SearchStringAddition name="ПлатежкаОснованиеСтрокаПоиска" id="209">
+										<AdditionSource>
+											<Item>ПлатежкаОснование</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ПлатежкаОснованиеСтрокаПоискаКонтекстноеМеню" id="210"/>
+										<ExtendedTooltip name="ПлатежкаОснованиеСтрокаПоискаРасширеннаяПодсказка" id="211"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ПлатежкаОснованиеСостояниеПросмотра" id="212">
+										<AdditionSource>
+											<Item>ПлатежкаОснование</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ПлатежкаОснованиеСостояниеПросмотраКонтекстноеМеню" id="213"/>
+										<ExtendedTooltip name="ПлатежкаОснованиеСостояниеПросмотраРасширеннаяПодсказка" id="214"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ПлатежкаОснованиеУправлениеПоиском" id="215">
+										<AdditionSource>
+											<Item>ПлатежкаОснование</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ПлатежкаОснованиеУправлениеПоискомКонтекстноеМеню" id="216"/>
+										<ExtendedTooltip name="ПлатежкаОснованиеУправлениеПоискомРасширеннаяПодсказка" id="217"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+									</Events>
+									<ChildItems>
+										<LabelField name="ПлатежкаОснованиеНомерСтроки" id="218">
+											<DataPath>Объект.ПлатежкаОснование.LineNumber</DataPath>
+											<Visible>false</Visible>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ПлатежкаОснованиеНомерСтрокиКонтекстноеМеню" id="219"/>
+											<ExtendedTooltip name="ПлатежкаОснованиеНомерСтрокиРасширеннаяПодсказка" id="220"/>
+										</LabelField>
+										<InputField name="ПлатежкаОснованиеКонтрагент" id="221">
+											<DataPath>Объект.ПлатежкаОснование.Контрагент</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ПлатежкаОснованиеКонтрагентКонтекстноеМеню" id="222"/>
+											<ExtendedTooltip name="ПлатежкаОснованиеКонтрагентРасширеннаяПодсказка" id="223"/>
+										</InputField>
+										<InputField name="ПлатежкаОснованиеШаблон" id="224">
+											<DataPath>Объект.ПлатежкаОснование.Шаблон</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ПлатежкаОснованиеШаблонКонтекстноеМеню" id="225"/>
+											<ExtendedTooltip name="ПлатежкаОснованиеШаблонРасширеннаяПодсказка" id="226"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+								<LabelDecoration name="Декорация1" id="229">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<SkipOnInput>true</SkipOnInput>
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Для формирования шаблона используйте поля &lt;b&gt;[бронь]&lt;/&gt;, &lt;b&gt;[сумма], [номерсчета], [датасчета] &lt;/&gt;(имена полей указываются вместе с квадратными скобками, пример: "оплата по счету * [бронь] /&lt;b&gt;[сумма]&lt;/&gt;; за путевку. Сумма &lt;b&gt;[сумма]&lt;/&gt;, Без НДС". Регистр наименований полей имеет значение, наименование полей должно быть указано в нижнем регистре.</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация1КонтекстноеМеню" id="230"/>
+									<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="231"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<CheckBoxField name="ТекущаяДатаСчетаТО1" id="193">
+							<DataPath>Объект.ТекущаяДатаСчетаТО</DataPath>
+							<Enabled>false</Enabled>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ТекущаяДатаСчетаТО1КонтекстноеМеню" id="194"/>
+							<ExtendedTooltip name="ТекущаяДатаСчетаТО1РасширеннаяПодсказка" id="195"/>
+						</CheckBoxField>
+						<UsualGroup name="ЗагрузкаВалютТО" id="150">
+							<Enabled>false</Enabled>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Загрузка валют ТО</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Загрузка валют ТО</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Usual</Behavior>
+							<Representation>NormalSeparation</Representation>
+							<ThroughAlign>DontUse</ThroughAlign>
+							<ExtendedTooltip name="ЗагрузкаВалютТОРасширеннаяПодсказка" id="151"/>
+							<ChildItems>
+								<InputField name="КурсыВалютСервер" id="152">
+									<DataPath>Объект.КурсыВалютСервер</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сервер</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="КурсыВалютСерверКонтекстноеМеню" id="153"/>
+									<ExtendedTooltip name="КурсыВалютСерверРасширеннаяПодсказка" id="154"/>
+									<Events>
+										<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+									</Events>
+								</InputField>
+								<InputField name="КурсыВалютСсылка" id="147">
+									<DataPath>Объект.КурсыВалютСсылка</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Путь</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="КурсыВалютСсылкаКонтекстноеМеню" id="148"/>
+									<ExtendedTooltip name="КурсыВалютСсылкаРасширеннаяПодсказка" id="149"/>
+									<Events>
+										<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="Клиенты" id="27">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Клиенты</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Клиенты</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="КлиентыРасширеннаяПодсказка" id="28"/>
+					<ChildItems>
+						<InputField name="КаталогЗаказчиков" id="62">
+							<DataPath>Объект.КаталогЗаказчиков</DataPath>
+							<ChoiceFoldersAndItems>Folders</ChoiceFoldersAndItems>
+							<ContextMenu name="КаталогЗаказчиковКонтекстноеМеню" id="63"/>
+							<ExtendedTooltip name="КаталогЗаказчиковРасширеннаяПодсказка" id="64"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</InputField>
+						<InputField name="ВидДоговораКлиент" id="16">
+							<DataPath>Объект.ВидДоговораКлиент</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Вид договора клиент</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ВидДоговораКлиентКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="ВидДоговораКлиентРасширеннаяПодсказка" id="18"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</InputField>
+						<InputField name="КассаКлиентНал" id="53">
+							<DataPath>Объект.КассаКлиентНал</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Расчет с Клиентом Касса</v8:content>
+								</v8:item>
+							</Title>
+							<ListChoiceMode>true</ListChoiceMode>
+							<ChooseType>false</ChooseType>
+							<ContextMenu name="КассаКлиентНалКонтекстноеМеню" id="54"/>
+							<ExtendedTooltip name="КассаКлиентНалРасширеннаяПодсказка" id="55"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</InputField>
+						<InputField name="КассаКлиентБезнал" id="56">
+							<DataPath>Объект.КассаКлиентБезнал</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Расчет с Клиентом Банк (оставить пустым для автоматического определения)</v8:content>
+								</v8:item>
+							</Title>
+							<ClearButton>true</ClearButton>
+							<ListChoiceMode>true</ListChoiceMode>
+							<ChooseType>false</ChooseType>
+							<ContextMenu name="КассаКлиентБезналКонтекстноеМеню" id="57"/>
+							<ExtendedTooltip name="КассаКлиентБезналРасширеннаяПодсказка" id="58"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</InputField>
+						<InputField name="СтатьяДвиженияДенежныхСредствКлиент" id="121">
+							<DataPath>Объект.СтатьяДвиженияДенежныхСредствКлиент</DataPath>
+							<ContextMenu name="СтатьяДвиженияДенежныхСредствКлиентКонтекстноеМеню" id="122"/>
+							<ExtendedTooltip name="СтатьяДвиженияДенежныхСредствКлиентРасширеннаяПодсказка" id="123"/>
+						</InputField>
+						<CheckBoxField name="УведомленияОбОшибкахПлатежейПокупателей" id="255">
+							<DataPath>Объект.УведомленияОбОшибкахПлатежейПокупателей</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="УведомленияОбОшибкахПлатежейПокупателейКонтекстноеМеню" id="256"/>
+							<ExtendedTooltip name="УведомленияОбОшибкахПлатежейПокупателейРасширеннаяПодсказка" id="257"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</CheckBoxField>
+						<CheckBoxField name="ПроводитьПлатежныеДокументыСОшибкамиПокупатели" id="258">
+							<DataPath>Объект.ПроводитьПлатежныеДокументыСОшибкамиПокупатели</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ПроводитьПлатежныеДокументыСОшибкамиПокупателиКонтекстноеМеню" id="259"/>
+							<ExtendedTooltip name="ПроводитьПлатежныеДокументыСОшибкамиПокупателиРасширеннаяПодсказка" id="260"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</CheckBoxField>
+						<CheckBoxField name="УникальностьДоговораКлиента" id="202">
+							<DataPath>Объект.УникальностьДоговораКлиента</DataPath>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Не позволяет создавать второй договор заказчика с одинаковым номером, интеграция платежей ведется по строке номера.</v8:content>
+								</v8:item>
+							</ToolTip>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="УникальностьДоговораКлиентаКонтекстноеМеню" id="203"/>
+							<ExtendedTooltip name="УникальностьДоговораКлиентаРасширеннаяПодсказка" id="204"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</CheckBoxField>
+						<CheckBoxField name="КлиентыПриоритетЗаказчикаВПлатеже" id="291">
+							<DataPath>Объект.КлиентыПриоритетЗаказчикаВПлатеже</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="КлиентыПриоритетЗаказчикаВПлатежеКонтекстноеМеню" id="292"/>
+							<ExtendedTooltip name="КлиентыПриоритетЗаказчикаВПлатежеРасширеннаяПодсказка" id="293"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</CheckBoxField>
+						<InputField name="ОтражениеАвансаАгенты" id="385">
+							<DataPath>Объект.ОтражениеАвансаАгенты</DataPath>
+							<ListChoiceMode>true</ListChoiceMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ChooseType>false</ChooseType>
+							<TextEdit>false</TextEdit>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Доход УСН</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">Доход УСН</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Доход комитента</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">Доход комитента</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="ОтражениеАвансаАгентыКонтекстноеМеню" id="386"/>
+							<ExtendedTooltip name="ОтражениеАвансаАгентыРасширеннаяПодсказка" id="387"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</InputField>
+						<InputField name="ОтражениеАвансаПоставщики" id="388">
+							<DataPath>Объект.ОтражениеАвансаПоставщики</DataPath>
+							<ListChoiceMode>true</ListChoiceMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ChooseType>false</ChooseType>
+							<TextEdit>false</TextEdit>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Доход УСН</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">Доход УСН</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Доход комитента</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">Доход комитента</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="ОтражениеАвансаПоставщикиКонтекстноеМеню" id="389"/>
+							<ExtendedTooltip name="ОтражениеАвансаПоставщикиРасширеннаяПодсказка" id="390"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="Загрузки" id="42">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Загрузки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Загрузки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>HorizontalIfPossible</Group>
+					<ExtendedTooltip name="ЗагрузкиРасширеннаяПодсказка" id="43"/>
+				</Page>
+				<Page name="Кассы" id="74">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расчеты через Эквайринг</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кассы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>HorizontalIfPossible</Group>
+					<ExtendedTooltip name="КассыРасширеннаяПодсказка" id="75"/>
+					<ChildItems>
+						<Table name="ВидыОплатЮОН" id="76">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<VerticalStretch>false</VerticalStretch>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Объект.ВидыОплатЮОН</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ВидыОплатЮОНКонтекстноеМеню" id="77"/>
+							<AutoCommandBar name="ВидыОплатЮОНКоманднаяПанель" id="78"/>
+							<ExtendedTooltip name="ВидыОплатЮОНРасширеннаяПодсказка" id="79"/>
+							<SearchStringAddition name="ВидыОплатЮОНСтрокаПоиска" id="80">
+								<AdditionSource>
+									<Item>ВидыОплатЮОН</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ВидыОплатЮОНСтрокаПоискаКонтекстноеМеню" id="81"/>
+								<ExtendedTooltip name="ВидыОплатЮОНСтрокаПоискаРасширеннаяПодсказка" id="82"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ВидыОплатЮОНСостояниеПросмотра" id="83">
+								<AdditionSource>
+									<Item>ВидыОплатЮОН</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ВидыОплатЮОНСостояниеПросмотраКонтекстноеМеню" id="84"/>
+								<ExtendedTooltip name="ВидыОплатЮОНСостояниеПросмотраРасширеннаяПодсказка" id="85"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ВидыОплатЮОНУправлениеПоиском" id="86">
+								<AdditionSource>
+									<Item>ВидыОплатЮОН</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ВидыОплатЮОНУправлениеПоискомКонтекстноеМеню" id="87"/>
+								<ExtendedTooltip name="ВидыОплатЮОНУправлениеПоискомРасширеннаяПодсказка" id="88"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="ВидыОплатЮОННомерСтроки" id="89">
+									<DataPath>Объект.ВидыОплатЮОН.LineNumber</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ВидыОплатЮОННомерСтрокиКонтекстноеМеню" id="90"/>
+									<ExtendedTooltip name="ВидыОплатЮОННомерСтрокиРасширеннаяПодсказка" id="91"/>
+								</LabelField>
+								<InputField name="ВидыОплатЮОНВидОплаты" id="92">
+									<DataPath>Объект.ВидыОплатЮОН.ВидОплаты</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ВидыОплатЮОНВидОплатыКонтекстноеМеню" id="93"/>
+									<ExtendedTooltip name="ВидыОплатЮОНВидОплатыРасширеннаяПодсказка" id="94"/>
+								</InputField>
+								<InputField name="ВидыОплатЮОНКассаЮОНТекст" id="101">
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ВидыОплатЮОНКассаЮОНТекстКонтекстноеМеню" id="102"/>
+									<ExtendedTooltip name="ВидыОплатЮОНКассаЮОНТекстРасширеннаяПодсказка" id="103"/>
+								</InputField>
+								<InputField name="ВидыОплатЮОНКассаЮОН" id="95">
+									<DataPath>Объект.ВидыОплатЮОН.КассаЮОН</DataPath>
+									<EditMode>Directly</EditMode>
+									<DropListButton>true</DropListButton>
+									<ListChoiceMode>true</ListChoiceMode>
+									<QuickChoice>true</QuickChoice>
+									<ChooseType>false</ChooseType>
+									<TextEdit>false</TextEdit>
+									<ContextMenu name="ВидыОплатЮОНКассаЮОНКонтекстноеМеню" id="96"/>
+									<ExtendedTooltip name="ВидыОплатЮОНКассаЮОНРасширеннаяПодсказка" id="97"/>
+								</InputField>
+								<InputField name="ВидыОплатЮОНПроцентКомиссии" id="98">
+									<DataPath>Объект.ВидыОплатЮОН.ПроцентКомиссии</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ВидыОплатЮОНПроцентКомиссииКонтекстноеМеню" id="99"/>
+									<ExtendedTooltip name="ВидыОплатЮОНПроцентКомиссииРасширеннаяПодсказка" id="100"/>
+								</InputField>
+								<CheckBoxField name="ВидыОплатЮОНВРасходы" id="241">
+									<DataPath>Объект.ВидыОплатЮОН.ВРасходы</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ВидыОплатЮОНВРасходыКонтекстноеМеню" id="242"/>
+									<ExtendedTooltip name="ВидыОплатЮОНВРасходыРасширеннаяПодсказка" id="243"/>
+									<Events>
+										<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+									</Events>
+								</CheckBoxField>
+							</ChildItems>
+						</Table>
+						<InputField name="ЭквайрингТипУслуги" id="294">
+							<DataPath>Объект.ЭквайрингТипУслуги</DataPath>
+							<DropListButton>true</DropListButton>
+							<ClearButton>true</ClearButton>
+							<ListChoiceMode>true</ListChoiceMode>
+							<ChooseType>false</ChooseType>
+							<ContextMenu name="ЭквайрингТипУслугиКонтекстноеМеню" id="295"/>
+							<ExtendedTooltip name="ЭквайрингТипУслугиРасширеннаяПодсказка" id="296"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</InputField>
+						<LabelDecoration name="Декорация3" id="297">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>(оставьте тип услуги пустым, чтобы услуга не создавалась)</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Декорация3КонтекстноеМеню" id="298"/>
+							<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="299"/>
+						</LabelDecoration>
+						<UsualGroup name="Группа5" id="104">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Значения по умолчанию</v8:content>
+								</v8:item>
+							</Title>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="105"/>
+							<ChildItems>
+								<InputField name="КассаКлиентКарта" id="68">
+									<DataPath>Объект.КассаКлиентКарта</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Расчет с Клиентом Карта</v8:content>
+										</v8:item>
+									</Title>
+									<ListChoiceMode>true</ListChoiceMode>
+									<ChooseType>false</ChooseType>
+									<ContextMenu name="КассаКлиентКартаКонтекстноеМеню" id="69"/>
+									<ExtendedTooltip name="КассаКлиентКартаРасширеннаяПодсказка" id="70"/>
+									<Events>
+										<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+									</Events>
+								</InputField>
+								<InputField name="ВидыОперацийОплатаПлатежнойКартой" id="65">
+									<DataPath>Объект.ВидыОперацийОплатаПлатежнойКартой</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Оплата платежной картой</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ВидыОперацийОплатаПлатежнойКартойКонтекстноеМеню" id="66"/>
+									<ExtendedTooltip name="ВидыОперацийОплатаПлатежнойКартойРасширеннаяПодсказка" id="67"/>
+									<Events>
+										<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+									</Events>
+								</InputField>
+								<UsualGroup name="Группа2" id="247">
+									<Behavior>Usual</Behavior>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="248"/>
+									<ChildItems>
+										<InputField name="КомиссияБанкаКарта" id="71">
+											<DataPath>Объект.КомиссияБанкаКарта</DataPath>
+											<ContextMenu name="КомиссияБанкаКартаКонтекстноеМеню" id="72"/>
+											<ExtendedTooltip name="КомиссияБанкаКартаРасширеннаяПодсказка" id="73"/>
+											<Events>
+												<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+											</Events>
+										</InputField>
+										<LabelDecoration name="Декорация2" id="244">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Комиссия банка по умолчанию на стороне клиента (используйте табличную часть настроек)</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация2КонтекстноеМеню" id="245"/>
+											<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="246"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<InputField name="АдресРеестраЭквайринга" id="238">
+									<DataPath>Объект.АдресРеестраЭквайринга</DataPath>
+									<ContextMenu name="АдресРеестраЭквайрингаКонтекстноеМеню" id="239"/>
+									<ExtendedTooltip name="АдресРеестраЭквайрингаРасширеннаяПодсказка" id="240"/>
+									<Events>
+										<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="Реализация" id="124">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Реализация</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Реализация</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="РеализацияРасширеннаяПодсказка" id="125"/>
+					<ChildItems>
+						<InputField name="РеализацияСчетРасчетовУслуги" id="136">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Счет расчетов Услуги</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="РеализацияСчетРасчетовУслугиКонтекстноеМеню" id="137"/>
+							<ExtendedTooltip name="РеализацияСчетРасчетовУслугиРасширеннаяПодсказка" id="138"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</InputField>
+						<CheckBoxField name="РеализацияЗагружатьНулевые" id="133">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Загружать услуги имеющие нулевую стоимость</v8:content>
+								</v8:item>
+							</Title>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="РеализацияЗагружатьНулевыеКонтекстноеМеню" id="134"/>
+							<ExtendedTooltip name="РеализацияЗагружатьНулевыеРасширеннаяПодсказка" id="135"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</CheckBoxField>
+						<InputField name="РеализацияПлатежиИзЮОН" id="139">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Источник информации о платежах</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="РеализацияПлатежиИзЮОНКонтекстноеМеню" id="140"/>
+							<ExtendedTooltip name="РеализацияПлатежиИзЮОНРасширеннаяПодсказка" id="141"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</InputField>
+						<UsualGroup name="Группа12" id="403">
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа12РасширеннаяПодсказка" id="404"/>
+							<ChildItems>
+								<UsualGroup name="Группа13" id="405">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Агентская деятельность</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<ExtendedTooltip name="Группа13РасширеннаяПодсказка" id="406"/>
+									<ChildItems>
+										<InputField name="РеализацияСчетРасчетовТО" id="421">
+											<DataPath>Объект.РеализацияСчетРасчетовТО</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="РеализацияСчетРасчетовТОКонтекстноеМеню" id="422"/>
+											<ExtendedTooltip name="РеализацияСчетРасчетовТОРасширеннаяПодсказка" id="423"/>
+											<Events>
+												<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+											</Events>
+										</InputField>
+										<InputField name="РеализацияКодПакетнойУслуги" id="306">
+											<DataPath>Объект.РеализацияКодПакетнойУслуги</DataPath>
+											<ListChoiceMode>true</ListChoiceMode>
+											<ChooseType>false</ChooseType>
+											<ContextMenu name="РеализацияКодПакетнойУслугиКонтекстноеМеню" id="307"/>
+											<ExtendedTooltip name="РеализацияКодПакетнойУслугиРасширеннаяПодсказка" id="308"/>
+											<Events>
+												<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+											</Events>
+										</InputField>
+										<CheckBoxField name="РеализацияАгентскиеУслугиБезОплаты" id="427">
+											<DataPath>Объект.РеализацияАгентскиеУслугиБезОплаты</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Включать агентские услуги без оплаты поотавщку</v8:content>
+												</v8:item>
+											</Title>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="РеализацияАгентскиеУслугиБезОплатыКонтекстноеМеню" id="428"/>
+											<ExtendedTooltip name="РеализацияАгентскиеУслугиБезОплатыРасширеннаяПодсказка" id="429"/>
+											<Events>
+												<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+											</Events>
+										</CheckBoxField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Группа14" id="407">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Услуги</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<ExtendedTooltip name="Группа14РасширеннаяПодсказка" id="408"/>
+									<ChildItems>
+										<InputField name="РеализацияУслугиСтавкаНДС" id="418">
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="РеализацияУслугиСтавкаНДСКонтекстноеМеню" id="419"/>
+											<ExtendedTooltip name="РеализацияУслугиСтавкаНДСРасширеннаяПодсказка" id="420"/>
+										</InputField>
+										<InputField name="РеализацияНоменклатураВУслугах" id="155">
+											<DataPath>Объект.РеализацияНоменклатураВУслугах</DataPath>
+											<ContextMenu name="РеализацияНоменклатураВУслугахКонтекстноеМеню" id="156"/>
+											<ExtendedTooltip name="РеализацияНоменклатураВУслугахРасширеннаяПодсказка" id="157"/>
+											<Events>
+												<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+											</Events>
+										</InputField>
+										<InputField name="РеализацияУслугиСубконто" id="424">
+											<DataPath>Объект.РеализацияУслугиСубконто</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="РеализацияУслугиСубконтоКонтекстноеМеню" id="425"/>
+											<ExtendedTooltip name="РеализацияУслугиСубконтоРасширеннаяПодсказка" id="426"/>
+											<Events>
+												<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+											</Events>
+										</InputField>
+										<InputField name="РеализацияСчетРасходовВУслугах" id="415">
+											<DataPath>Объект.РеализацияСчетРасходовВУслугах</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Счет расходов</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="РеализацияСчетРасходовВУслугахКонтекстноеМеню" id="416"/>
+											<ExtendedTooltip name="РеализацияСчетРасходовВУслугахРасширеннаяПодсказка" id="417"/>
+										</InputField>
+										<InputField name="РеализацияСчетДоходовВУслугах" id="158">
+											<DataPath>Объект.РеализацияСчетДоходовВУслугах</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Счет доходов</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="РеализацияСчетДоходовВУслугахКонтекстноеМеню" id="159"/>
+											<ExtendedTooltip name="РеализацияСчетДоходовВУслугахРасширеннаяПодсказка" id="160"/>
+											<Events>
+												<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+											</Events>
+										</InputField>
+										<InputField name="РеализацияСчетУчетаНДСВУслугах" id="400">
+											<DataPath>Объект.РеализацияСчетУчетаНДСВУслугах</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Счет учета НДС</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="РеализацияСчетУчетаНДСВУслугахКонтекстноеМеню" id="401"/>
+											<ExtendedTooltip name="РеализацияСчетУчетаНДСВУслугахРасширеннаяПодсказка" id="402"/>
+											<Events>
+												<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="РеализацияКомиссияТО" id="276">
+							<DataPath>Объект.РеализацияКомиссияТО</DataPath>
+							<DropListButton>true</DropListButton>
+							<ListChoiceMode>true</ListChoiceMode>
+							<QuickChoice>true</QuickChoice>
+							<ChooseType>false</ChooseType>
+							<TextEdit>false</TextEdit>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Договор с ТО</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">0</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Отчет комитенту</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">1</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="РеализацияКомиссияТОКонтекстноеМеню" id="277"/>
+							<ExtendedTooltip name="РеализацияКомиссияТОРасширеннаяПодсказка" id="278"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</InputField>
+						<UsualGroup name="Группа4" id="337">
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Наименование услуг в реализации (чеке)</v8:content>
+								</v8:item>
+							</Title>
+							<Behavior>Usual</Behavior>
+							<United>false</United>
+							<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="338"/>
+							<ChildItems>
+								<Table name="НаименованиеУслуги" id="315">
+									<Representation>List</Representation>
+									<AutoMaxHeight>false</AutoMaxHeight>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<VerticalStretch>false</VerticalStretch>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>Объект.НаименованиеУслуги</DataPath>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="НаименованиеУслугиКонтекстноеМеню" id="316"/>
+									<AutoCommandBar name="НаименованиеУслугиКоманднаяПанель" id="317"/>
+									<ExtendedTooltip name="НаименованиеУслугиРасширеннаяПодсказка" id="318"/>
+									<SearchStringAddition name="НаименованиеУслугиСтрокаПоиска" id="319">
+										<AdditionSource>
+											<Item>НаименованиеУслуги</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="НаименованиеУслугиСтрокаПоискаКонтекстноеМеню" id="320"/>
+										<ExtendedTooltip name="НаименованиеУслугиСтрокаПоискаРасширеннаяПодсказка" id="321"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="НаименованиеУслугиСостояниеПросмотра" id="322">
+										<AdditionSource>
+											<Item>НаименованиеУслуги</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="НаименованиеУслугиСостояниеПросмотраКонтекстноеМеню" id="323"/>
+										<ExtendedTooltip name="НаименованиеУслугиСостояниеПросмотраРасширеннаяПодсказка" id="324"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="НаименованиеУслугиУправлениеПоиском" id="325">
+										<AdditionSource>
+											<Item>НаименованиеУслуги</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="НаименованиеУслугиУправлениеПоискомКонтекстноеМеню" id="326"/>
+										<ExtendedTooltip name="НаименованиеУслугиУправлениеПоискомРасширеннаяПодсказка" id="327"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+									</Events>
+									<ChildItems>
+										<InputField name="НаименованиеУслугиТипУслуги" id="331">
+											<DataPath>Объект.НаименованиеУслуги.ТипУслуги</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<DropListButton>true</DropListButton>
+											<ListChoiceMode>true</ListChoiceMode>
+											<ChooseType>false</ChooseType>
+											<ContextMenu name="НаименованиеУслугиТипУслугиКонтекстноеМеню" id="332"/>
+											<ExtendedTooltip name="НаименованиеУслугиТипУслугиРасширеннаяПодсказка" id="333"/>
+										</InputField>
+										<InputField name="НаименованиеУслугиШаблон" id="334">
+											<DataPath>Объект.НаименованиеУслуги.Шаблон</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="НаименованиеУслугиШаблонКонтекстноеМеню" id="335"/>
+											<ExtendedTooltip name="НаименованиеУслугиШаблонРасширеннаяПодсказка" id="336"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+								<InputField name="РеализацияСодержаниеУслуги" id="342">
+									<DataPath>Объект.РеализацияСодержаниеУслуги</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Формат содержания услуги по умолчанию</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="РеализацияСодержаниеУслугиКонтекстноеМеню" id="343"/>
+									<ExtendedTooltip name="РеализацияСодержаниеУслугиРасширеннаяПодсказка" id="344"/>
+								</InputField>
+								<UsualGroup name="Группа7" id="345">
+									<ReadOnly>true</ReadOnly>
+									<EnableContentChange>true</EnableContentChange>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<United>false</United>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="346"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация4" id="339">
+											<AutoMaxHeight>false</AutoMaxHeight>
+											<HorizontalStretch>true</HorizontalStretch>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Для формирования шаблона используйте следующие теги: [бронь], [описание], [датанач], [страна], [город], [отель], [питание], [маршрут], [туристы], [договор]</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация4КонтекстноеМеню" id="340"/>
+											<ExtendedTooltip name="Декорация4РасширеннаяПодсказка" id="341"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="РеализацияЧекДопВознаграждениеПризнакАгента" id="350">
+							<DataPath>Объект.РеализацияЧекДопВознаграждениеПризнакАгента</DataPath>
+							<ClearButton>true</ClearButton>
+							<ContextMenu name="РеализацияЧекДопВознаграждениеПризнакАгентаКонтекстноеМеню" id="351"/>
+							<ExtendedTooltip name="РеализацияЧекДопВознаграждениеПризнакАгентаРасширеннаяПодсказка" id="352"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</InputField>
+						<CheckBoxField name="РеализацияИсключитьУслугиБанков" id="312">
+							<DataPath>Объект.РеализацияИсключитьУслугиБанков</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="РеализацияИсключитьУслугиБанковКонтекстноеМеню" id="313"/>
+							<ExtendedTooltip name="РеализацияИсключитьУслугиБанковРасширеннаяПодсказка" id="314"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</CheckBoxField>
+						<CheckBoxField name="РеализацияЗакрываетЗаявку" id="367">
+							<DataPath>Объект.РеализацияЗакрываетЗаявку</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="РеализацияЗакрываетЗаявкуКонтекстноеМеню" id="368"/>
+							<ExtendedTooltip name="РеализацияЗакрываетЗаявкуРасширеннаяПодсказка" id="369"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</CheckBoxField>
+						<InputField name="мдАлгоритмПроведения_РеализацияТоваровУслуг" id="391">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Алгоритм заполнения</v8:content>
+								</v8:item>
+							</Title>
+							<ListChoiceMode>true</ListChoiceMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ChooseType>false</ChooseType>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Товары, сумма оплат</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">0</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Услуги, сумма по договору + комиссия</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">1</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Услуги с 2026</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">2</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="мдАлгоритмПроведения_РеализацияТоваровУслугКонтекстноеМеню" id="392"/>
+							<ExtendedTooltip name="мдАлгоритмПроведения_РеализацияТоваровУслугРасширеннаяПодсказка" id="393"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</InputField>
+						<InputField name="РеализацияМетодРасчетаЦеныУслуг" id="394">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Источник цены услуги</v8:content>
+								</v8:item>
+							</Title>
+							<ListChoiceMode>true</ListChoiceMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ChooseType>false</ChooseType>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Цена услуги (Ю-ОН)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">0</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Сумма оплат ТО (1С)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">1</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="РеализацияМетодРасчетаЦеныУслугКонтекстноеМеню" id="395"/>
+							<ExtendedTooltip name="РеализацияМетодРасчетаЦеныУслугРасширеннаяПодсказка" id="396"/>
+						</InputField>
+						<InputField name="РеализацияМетодФормирования" id="397">
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="РеализацияМетодФормированияКонтекстноеМеню" id="398"/>
+							<ExtendedTooltip name="РеализацияМетодФормированияРасширеннаяПодсказка" id="399"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="ОтчетКомитента" id="164">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отчет комитента</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отчет комитента</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ОтчетКомитентаРасширеннаяПодсказка" id="165"/>
+					<ChildItems>
+						<CheckBoxField name="ОтчетКомитентаУдержатьВознаграждение" id="178">
+							<DataPath>Объект.ОтчетКомитентаУдержатьВознаграждение</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ОтчетКомитентаУдержатьВознаграждениеКонтекстноеМеню" id="179"/>
+							<ExtendedTooltip name="ОтчетКомитентаУдержатьВознаграждениеРасширеннаяПодсказка" id="180"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</CheckBoxField>
+						<InputField name="ОтчетКомитентаСпособРасчета" id="175">
+							<DataPath>Объект.ОтчетКомитентаСпособРасчета</DataPath>
+							<ContextMenu name="ОтчетКомитентаСпособРасчетаКонтекстноеМеню" id="176"/>
+							<ExtendedTooltip name="ОтчетКомитентаСпособРасчетаРасширеннаяПодсказка" id="177"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</InputField>
+						<InputField name="ОтчетКомитентаУслугаПоВознаграждению" id="166">
+							<DataPath>Объект.ОтчетКомитентаУслугаПоВознаграждению</DataPath>
+							<ContextMenu name="ОтчетКомитентаУслугаПоВознаграждениюКонтекстноеМеню" id="167"/>
+							<ExtendedTooltip name="ОтчетКомитентаУслугаПоВознаграждениюРасширеннаяПодсказка" id="168"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</InputField>
+						<InputField name="ОтчетКомитентаСчетУчетаДоходов" id="169">
+							<DataPath>Объект.ОтчетКомитентаСчетУчетаДоходов</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Счет учета доходов</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ОтчетКомитентаСчетУчетаДоходовКонтекстноеМеню" id="170"/>
+							<ExtendedTooltip name="ОтчетКомитентаСчетУчетаДоходовРасширеннаяПодсказка" id="171"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</InputField>
+						<InputField name="ОтчетКомитентаНоменклатурнаяГруппа" id="172">
+							<DataPath>Объект.ОтчетКомитентаНоменклатурнаяГруппа</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Номенклатурная группа</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ОтчетКомитентаНоменклатурнаяГруппаКонтекстноеМеню" id="173"/>
+							<ExtendedTooltip name="ОтчетКомитентаНоменклатурнаяГруппаРасширеннаяПодсказка" id="174"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</InputField>
+						<InputField name="ОтчетКомитентаДСВидОтчетаПоПлатежам" id="181">
+							<DataPath>Объект.ОтчетКомитентаДСВидОтчетаПоПлатежам</DataPath>
+							<ContextMenu name="ОтчетКомитентаДСВидОтчетаПоПлатежамКонтекстноеМеню" id="182"/>
+							<ExtendedTooltip name="ОтчетКомитентаДСВидОтчетаПоПлатежамРасширеннаяПодсказка" id="183"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</InputField>
+						<InputField name="ОтчетКомитентаСчетУчетаРасчетовСКонтрагентом" id="184">
+							<DataPath>Объект.ОтчетКомитентаСчетУчетаРасчетовСКонтрагентом</DataPath>
+							<ContextMenu name="ОтчетКомитентаСчетУчетаРасчетовСКонтрагентомКонтекстноеМеню" id="185"/>
+							<ExtendedTooltip name="ОтчетКомитентаСчетУчетаРасчетовСКонтрагентомРасширеннаяПодсказка" id="186"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</InputField>
+						<InputField name="ОтчетКомитентаСчетУчетаРасчетовПоАвансам" id="187">
+							<DataPath>Объект.ОтчетКомитентаСчетУчетаРасчетовПоАвансам</DataPath>
+							<ContextMenu name="ОтчетКомитентаСчетУчетаРасчетовПоАвансамКонтекстноеМеню" id="188"/>
+							<ExtendedTooltip name="ОтчетКомитентаСчетУчетаРасчетовПоАвансамРасширеннаяПодсказка" id="189"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</InputField>
+						<InputField name="ОтчетКомитентаДополнительноеВознаграждение" id="285">
+							<DataPath>Объект.ОтчетКомитентаДополнительноеВознаграждение</DataPath>
+							<ContextMenu name="ОтчетКомитентаДополнительноеВознаграждениеКонтекстноеМеню" id="286"/>
+							<ExtendedTooltip name="ОтчетКомитентаДополнительноеВознаграждениеРасширеннаяПодсказка" id="287"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</InputField>
+						<InputField name="ОтчетКомитентаДополнительноеВознаграждениеГруппа" id="288">
+							<DataPath>Объект.ОтчетКомитентаДополнительноеВознаграждениеГруппа</DataPath>
+							<ContextMenu name="ОтчетКомитентаДополнительноеВознаграждениеГруппаКонтекстноеМеню" id="289"/>
+							<ExtendedTooltip name="ОтчетКомитентаДополнительноеВознаграждениеГруппаРасширеннаяПодсказка" id="290"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</InputField>
+						<CheckBoxField name="РеализацияВсеВАгентскиеУслуги" id="282">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Выделять комиссию</v8:content>
+								</v8:item>
+							</Title>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="РеализацияВсеВАгентскиеУслугиКонтекстноеМеню" id="283"/>
+							<ExtendedTooltip name="РеализацияВсеВАгентскиеУслугиРасширеннаяПодсказка" id="284"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</CheckBoxField>
+					</ChildItems>
+				</Page>
+				<Page name="Группа8" id="356">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Чек</v8:content>
+						</v8:item>
+					</Title>
+					<Group>HorizontalIfPossible</Group>
+					<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="357"/>
+					<ChildItems>
+						<InputField name="КлиентыЧекПризнакСпособаРасчета" id="353">
+							<DataPath>Объект.ЧекПризнакСпособаРасчета</DataPath>
+							<ContextMenu name="КлиентыЧекПризнакСпособаРасчетаКонтекстноеМеню" id="354"/>
+							<ExtendedTooltip name="КлиентыЧекПризнакСпособаРасчетаРасширеннаяПодсказка" id="355"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</InputField>
+						<InputField name="ЧекПризнакПредметаРасчета" id="358">
+							<DataPath>Объект.ЧекПризнакПредметаРасчета</DataPath>
+							<ContextMenu name="ЧекПризнакПредметаРасчетаКонтекстноеМеню" id="359"/>
+							<ExtendedTooltip name="ЧекПризнакПредметаРасчетаРасширеннаяПодсказка" id="360"/>
+							<Events>
+								<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<UsualGroup name="Группа3" id="29">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Администратор</v8:content>
+				</v8:item>
+			</Title>
+			<Behavior>Collapsible</Behavior>
+			<Collapsed>true</Collapsed>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="30"/>
+			<ChildItems>
+				<CheckBoxField name="РежимАдминистратора" id="47">
+					<DataPath>Объект.РежимАдминистратора</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="РежимАдминистратораКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="РежимАдминистратораРасширеннаяПодсказка" id="49"/>
+					<Events>
+						<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="ТестовыйРежим" id="31">
+					<DataPath>Объект.ТестовыйРежим</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТестовыйРежимКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="ТестовыйРежимРасширеннаяПодсказка" id="33"/>
+					<Events>
+						<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+					</Events>
+				</CheckBoxField>
+				<InputField name="ТестоваяЗаявка" id="34">
+					<DataPath>Объект.ТестоваяЗаявка</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер заявки</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ТестоваяЗаявкаКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="ТестоваяЗаявкаРасширеннаяПодсказка" id="36"/>
+					<Events>
+						<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+					</Events>
+				</InputField>
+				<InputField name="ТестоваяЗаявкаЮОН" id="37">
+					<DataPath>Объект.ТестоваяЗаявкаЮОН</DataPath>
+					<ContextMenu name="ТестоваяЗаявкаЮОНКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="ТестоваяЗаявкаЮОНРасширеннаяПодсказка" id="39"/>
+					<Events>
+						<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+					</Events>
+				</InputField>
+				<CheckBoxField name="УдалениеДоговоров" id="109">
+					<DataPath>Объект.УдалениеДоговоров</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="УдалениеДоговоровКонтекстноеМеню" id="110"/>
+					<ExtendedTooltip name="УдалениеДоговоровРасширеннаяПодсказка" id="111"/>
+					<Events>
+						<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="УдалениеКонтрагентов" id="112">
+					<DataPath>Объект.УдалениеКонтрагентов</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="УдалениеКонтрагентовКонтекстноеМеню" id="113"/>
+					<ExtendedTooltip name="УдалениеКонтрагентовРасширеннаяПодсказка" id="114"/>
+					<Events>
+						<Event name="OnChange">СохранитьНастройкуНажатие</Event>
+					</Events>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<Button name="Команда1" id="40">
+			<Type>UsualButton</Type>
+			<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+			<CommandName>Form.Command.Команда1</CommandName>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="Команда1РасширеннаяПодсказка" id="41"/>
+		</Button>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ЭТ_Настройки</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Команда1" id="1">
+			<Action>Команда1</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОтправитьПисьмо" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить письмо</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить письмо</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Команда2</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>
